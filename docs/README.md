@@ -28,6 +28,9 @@ Este projeto utiliza as seguintes tecnologias e ferramentas:
 
 ### Padrão para nomes de branches
 
+- pagina/: Usado para criar pagina.
+Exemplo: pagina/home
+
 - feature/: Usado para novas funcionalidades.
 Exemplo: feature/adicionar-login-social
 
