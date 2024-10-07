@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 430px) {
+    body {
+        font-family: 'Roboto', sans-serif;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    header {
+        padding-top: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 10%;
+        color: #fff;
+    }
+    nav{
+        display: flex;
+        height: 24%;
+        width: 100%;
+        flex-direction: column;
+        font-size: 1.5rem;
+        justify-content: center;
+        text-align: left;
+    }
+    nav p{
+        height: 5%;
+    }
+    .textoticket {
+        padding-left: 10px;
+        padding-top: 10px;
+        font-weight: 500;
+    }
+    .tickets{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+    .ticket {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        width: 45%;
+        background-image: url(../img/ticket.png);
+        background-size: 193px;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: white;
+    }
+    .ticket img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .imgticket {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+    }
+    .imgticket {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 30%;
+    }
+    .usarticket{
+        background-color: #FF0000;
+        border-radius: 30px;
+        text-align: center;
+    }
+    .usarticket img{
+        width: 100%;
+        height: 100%;
+    }
+
+
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 59%;
+        background-color: #cecdcc50;
+        width: 100%;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+    }
+    .mapasec {
+        display: flex;
+        height: 40%;
+        width: 90%;
+}
+    .outrosec {
+        display: flex;
+        height: 30%;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .map {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40%;
+        height: 60%;
+        background-color: #CECDCC;
+        border-radius: 20px;
+    }
+    .info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40%;
+        height: 60%;
+        background-color: #CECDCC;
+        border-radius: 20px;
+    }
+
+    .restosec {
+        display: flex;
+        height: 20%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mapa {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../img/mapa.png);
+        background-size: 100%;
+        background-position: center;
+        width: 100%;
+        color: white;  
+        border-radius: 30px;
+    }
+    form {
+        height: 70%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .form {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .input {
+        height: 70%;
+        width: 80%;
+    }
+    .form-control{
+        
+        height: 60%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border-radius: 20px !important;
+    }
+    button {
+        height: 20%;
+        width: 20%;
+        border-radius: 20px;
+        background-color: #FF0000;
+        color: white;
+        font-size: 1.5rem;
+        font-weight: bold;
+        border-radius: 30px !important;
+        border: none;
+    }
+    footer {
+        position: fixed !important;
+        bottom: 0 !important;
+        width: 100%;
+        height: 7%;
+        background-color: #FF0000;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    } 
+    footer div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80%;
+    }	
+    footer div img {
+        width: 100%;
+        height: 100%;
+    }
+}
