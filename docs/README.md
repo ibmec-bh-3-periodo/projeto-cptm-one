@@ -76,12 +76,11 @@ Exemplo: chore: atualizar pacotes NPM
 - **/docs**: Documentação do projeto.
 
 
-### 5. Requisitos Funcionais
+### 5. Requisitos Funcionais(backlog)
 
-1. **Cadastro de Usuários:** Permite o registro de novos usuários.
-2. **Calculo de rotas:** Usuários podem calcular a melhor rota para chegar no destino.
-3. **Compra de passagem:** Usuários podem comprar passagens pelo app.
-4. **Visualização de mapa:** Visualização do mapa das linhas de metro, com localização em tempo real.
+1. **Calculo de rotas:** Usuários podem calcular a melhor rota para chegar no destino.
+2. **Compra de passagem:** Usuários podem comprar passagens pelo app.
+3. **Visualização de mapa:** Visualização do mapa das linhas de metro, com localização em tempo real.
 
 ---
 
