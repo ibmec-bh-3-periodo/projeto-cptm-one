@@ -97,8 +97,8 @@ vou fazer ajustes posição dos itens
 fiz caixa do valor do ticket
 vou fazer posicionar icones centralizados
 - Lucas Tergilene:
-fiz
-fiz vou fazer
+fiz o body e uma parte do footer
+fiz vou fazer implementação de uma barra de pesquisa que consiga ligar dois endereços 
 
 --20 de Outubro--
 - Lucas Buccini:
@@ -111,7 +111,7 @@ vou fazer melhorar responsividade da pagina
 fiz coloquei nova caixa porque o design proposto mudou
 vou fazer corrigir imagens que desconfiguraram a pagina de pagamento
 - Lucas Tergilene:
-fiz
-fiz vou fazer
+fiz mudança na api para melhor funcionamento da barra de pesquisa
+fiz vou fazer o footer
 
 
