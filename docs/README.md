@@ -91,8 +91,8 @@ Exemplo: chore: atualizar pacotes NPM
 fiz
 vou fazer
 - Marcello Rocha:
-fiz
-vou fazer
+fiz o footer e a head da pagina pagamentos
+vou fazer ajustes posição dos itens
 - Mateus Milanez:
 fiz
 vou fazer
@@ -105,8 +105,8 @@ fiz vou fazer
 fiz
 vou fazer
 - Marcello Rocha:
-fiz
-vou fazer
+fiz coloquei as imagens na pagina de pagamento
+vou fazer melhorar responsividade da pagina
 - Mateus Milanez:
 fiz
 vou fazer
