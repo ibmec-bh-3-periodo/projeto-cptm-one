@@ -84,3 +84,34 @@ Exemplo: chore: atualizar pacotes NPM
 4. **Visualização de mapa:** Visualização do mapa das linhas de metro, com localização em tempo real.
 
 ---
+
+## 6. Daily's
+--15 de Outubro--
+- Lucas Buccini:
+fiz
+vou fazer
+- Marcello Rocha:
+fiz
+vou fazer
+- Mateus Milanez:
+fiz
+vou fazer
+- Lucas Tergilene:
+fiz
+fiz vou fazer
+
+--20 de Outubro--
+- Lucas Buccini:
+fiz
+vou fazer
+- Marcello Rocha:
+fiz
+vou fazer
+- Mateus Milanez:
+fiz
+vou fazer
+- Lucas Tergilene:
+fiz
+fiz vou fazer
+
+
