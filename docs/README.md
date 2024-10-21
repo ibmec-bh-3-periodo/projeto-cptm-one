@@ -94,8 +94,8 @@ vou fazer
 fiz o footer e a head da pagina pagamentos
 vou fazer ajustes posição dos itens
 - Mateus Milanez:
-fiz
-vou fazer
+fiz caixa do valor do ticket
+vou fazer posicionar icones centralizados
 - Lucas Tergilene:
 fiz
 fiz vou fazer
@@ -107,9 +107,9 @@ vou fazer
 - Marcello Rocha:
 fiz coloquei as imagens na pagina de pagamento
 vou fazer melhorar responsividade da pagina
-- Mateus Milanez:
-fiz
-vou fazer
+- Mateus Milanez: 
+fiz coloquei nova caixa porque o design proposto mudou
+vou fazer corrigir imagens que desconfiguraram a pagina de pagamento
 - Lucas Tergilene:
 fiz
 fiz vou fazer
