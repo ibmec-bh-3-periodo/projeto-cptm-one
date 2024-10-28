@@ -87,8 +87,8 @@ Exemplo: chore: atualizar pacotes NPM
 ## 6. Daily's
 --15 de Outubro--
 - Lucas Buccini:
-fiz
-vou fazer
+fiz pagina da home e criei estrutura de controle de versão do grupo
+vou fazer melhorar a home
 - Marcello Rocha:
 fiz o footer e a head da pagina pagamentos
 vou fazer ajustes posição dos itens
@@ -101,8 +101,8 @@ fiz vou fazer implementação de uma barra de pesquisa que consiga ligar dois en
 
 --20 de Outubro--
 - Lucas Buccini:
-fiz
-vou fazer
+fiz organizei nomes dos arquivos do grupo para nao dar conflito e fiz merge 
+vou fazer melhorar posicioanemto da home e mudar cor dos icones
 - Marcello Rocha:
 fiz coloquei as imagens na pagina de pagamento
 vou fazer melhorar responsividade da pagina
@@ -113,4 +113,17 @@ vou fazer corrigir imagens que desconfiguraram a pagina de pagamento
 fiz mudança na api para melhor funcionamento da barra de pesquisa
 fiz vou fazer o footer
 
+--28 de Outubro--
+- Lucas Buccini:
+fiz alterou novo ticket e trocou cor dos icones no rodapé para branco
+vou fazer ajustar home e colocar os tickets em javascript para a quantidade ser igual a comprada
+- Marcello Rocha:
+fiz design da pagina de perfil e ticket
+vou fazer pagina do ticket grande quando for usar
+- Mateus Milanez: 
+fiz design de pagina de login
+vou fazer pagina de perfil
+- Lucas Tergilene:
+fiz design para melhorar pagina de mapa
+vou fazer pagina de login
 
