@@ -34,7 +34,7 @@ body {
     }
     nav{
         display: flex;
-        height: 24%;
+        height: 20%;
         width: 100%;
         flex-direction: column;
         font-size: 1.5rem;
@@ -69,7 +69,7 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 59%;
+        height: 63%;
         background-color: #d3ccccf3;
         width: 100%;
     }
@@ -151,7 +151,7 @@ body {
     }
     .trem img {
         width: 100%;
-        padding-bottom: 60px;
+        padding-bottom: 40px;
     }
     .mapa {
         display: flex;
