@@ -28,6 +28,24 @@ body {
         color: #fff;
     }
 
+    section{
+        display: flex;
+        flex-direction: column;
+        height: 83%;
+        width: 100%;
+        align-items: center;
+    }
+
+    .principal{
+        height: 100%;
+    }
+
+    .imagemprincipal{
+        height: 80%;
+        padding-top: 10px;
+        border-radius: 3%;
+    }
+
     footer {
         position: fixed !important;
         bottom: 0 !important;
@@ -38,5 +56,5 @@ body {
         justify-content: space-around;
         align-items: center;
     }
-    
+
 }
