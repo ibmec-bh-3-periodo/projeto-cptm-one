@@ -68,13 +68,13 @@ body {
         justify-content: space-evenly;
         align-items: center;
         width: 100%;
-        height: 90%;
+        height: 100%;
         margin: 0;
         padding: 0;
     }
     .carrossel img {
         width: 90%;
-        height: 90%;
+        height: 100%;
         border-radius: 10px;
     }
     li {
@@ -133,6 +133,16 @@ body {
         background-color: white;
         border-radius: 20px;
     }
+    .map a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        color: #212529;
+    }	
 
     .imgsec {
         display: flex;
@@ -154,6 +164,7 @@ body {
         align-items: center;
         width: 100%;
         height: 30%;
+        text-decoration: none;
     }
     .restosec {
         display: flex;
@@ -185,6 +196,7 @@ body {
         color: white;  
         border-radius: 30px;
     }
+
     form {
         height: 70%;
         width: 100%;
@@ -258,13 +270,25 @@ body {
         align-items: center;
         height: 100%;
     }	
+    footer a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        text-decoration: none;
+        color: white;
+    }
     footer div img {
-        width: 60%;
+        width: 100%;
+        height: 60%;
     }
 }
+    
     .home a {
         height: 100%;
+        width: 100%;
     }
     .saldo a {
         height: 100%;
+        width: 100%;
     }
