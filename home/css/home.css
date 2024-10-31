@@ -68,13 +68,13 @@ body {
         justify-content: space-evenly;
         align-items: center;
         width: 100%;
-        height: 90%;
+        height: 100%;
         margin: 0;
         padding: 0;
     }
     .carrossel img {
         width: 90%;
-        height: 90%;
+        height: 100%;
         border-radius: 10px;
     }
     li {
@@ -133,6 +133,16 @@ body {
         background-color: white;
         border-radius: 20px;
     }
+    .map a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        color: #212529;
+    }	
 
     .imgsec {
         display: flex;
@@ -154,6 +164,7 @@ body {
         align-items: center;
         width: 100%;
         height: 30%;
+        text-decoration: none;
     }
     .restosec {
         display: flex;
@@ -185,6 +196,7 @@ body {
         color: white;  
         border-radius: 30px;
     }
+
     form {
         height: 70%;
         width: 100%;
@@ -258,13 +270,92 @@ body {
         align-items: center;
         height: 100%;
     }	
+    footer a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        text-decoration: none;
+        color: white;
+    }
     footer div img {
-        width: 60%;
+        width: 100%;
+        height: 60%;
     }
 }
+    
     .home a {
         height: 100%;
+        width: 100%;
     }
     .saldo a {
         height: 100%;
+        width: 100%;
+    }
+    /* Estilos do carrossel */
+    .carousel-container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        max-width: 600px;
+        margin: 20px auto;
+        overflow: hidden;
+    }
+
+    .carousel {
+        overflow: hidden;
+        width: 100%;
+        padding-left: 10px;
+    }
+
+    .carousel-track {
+        display: flex;
+        transition: transform 0.5s ease;
+    }
+
+    .ticket {
+        flex: 0 0 100%;
+        max-width: 50%;
+        height: 100%;
+        /* padding: 20px; */
+        margin: 10px;
+        background-color: #f0f0f0;
+        border-radius: 8px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.048);
+    }
+
+    .ticket img {
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+    }
+
+    /* Botões de navegação */
+    .carousel-btn {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 0px;
+        cursor: pointer;
+        font-size: 18px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1; /* Certifique-se de que os botões fiquem acima dos outros elementos */
+        width: 10%;
+    }
+
+    .prev {
+        left: 10px; /* Alinha o botão 'Voltar' 10px da borda esquerda */
+    }
+
+    .next {
+        right: 10px; /* Alinha o botão 'Próximo' 10px da borda direita */
+    }
+
+    /* Ajusta a visibilidade dos botões */
+    .carousel-btn:disabled {
+        visibility: hidden; /* Oculta o botão quando desativado */
     }
