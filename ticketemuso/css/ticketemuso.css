@@ -60,12 +60,20 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 80%;
+        height: 100%;
     }	
     footer div img {
-        width: 100%;
-        height: 100%;
-
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
     }
-
+    
+    .home a {
+        height: 100%;
+    }
+    .saldo a {
+        height: 100%;
+    }
 }
