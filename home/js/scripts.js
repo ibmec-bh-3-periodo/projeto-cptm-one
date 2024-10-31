@@ -8,6 +8,10 @@ let currentIndex = 0;
 function updateCarousel() {
     const ticketWidth = document.querySelector('.ticket').clientWidth;
     track.style.transform = `translateX(-${currentIndex * ticketWidth}px)`;
+
+    // Mostrar ou ocultar os botões conforme necessário
+    prevBtn.style.visibility = currentIndex === 0 ? 'hidden' : 'visible';
+    nextBtn.style.visibility = currentIndex === document.querySelectorAll('.ticket').length - 1 ? 'hidden' : 'visible';
 }
 
 // Botão "Próximo"
@@ -26,3 +30,6 @@ prevBtn.addEventListener('click', () => {
         updateCarousel();
     }
 });
+
+// Inicializar a visibilidade dos botões
+updateCarousel();
