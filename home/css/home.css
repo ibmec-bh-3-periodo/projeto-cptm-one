@@ -292,3 +292,69 @@ body {
         height: 100%;
         width: 100%;
     }
+    /* Estilos do carrossel */
+    .carousel-container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        max-width: 600px;
+        margin: 20px auto;
+        overflow: hidden;
+    }
+
+    .carousel {
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .carousel-track {
+        display: flex;
+        transition: transform 0.5s ease;
+    }
+
+    .ticket {
+        flex: 0 0 100%;
+        max-width: 50%;
+        height: 100%;
+        /* padding: 20px; */
+        margin: 10px;
+        background-color: #f0f0f0;
+        border-radius: 8px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.048);
+    }
+
+    .ticket img {
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+    }
+
+    /* Botões de navegação */
+    .carousel-btn {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 0px;
+        cursor: pointer;
+        font-size: 18px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1; /* Certifique-se de que os botões fiquem acima dos outros elementos */
+        width: 10%;
+    }
+
+    .prev {
+        left: 10px; /* Alinha o botão 'Voltar' 10px da borda esquerda */
+    }
+
+    .next {
+        right: 10px; /* Alinha o botão 'Próximo' 10px da borda direita */
+    }
+
+    /* Ajusta a visibilidade dos botões */
+    .carousel-btn:disabled {
+        visibility: hidden; /* Oculta o botão quando desativado */
+    }
