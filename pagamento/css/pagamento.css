@@ -43,12 +43,12 @@ body {
         height: 29px;
     }
     .espacar{
-        height: 5%;
+        height: 2%;
         width: 100%;
     }
 
     .ticket-card {
-        width: 100%;
+        height: 200px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -67,7 +67,7 @@ body {
         height: 10px;
     }
     .ticket-info {
-        height: 100px;
+        height: 200px;
         width: 70%;
         background-color: rgb(192, 190, 190);
         border-radius: 10px;
