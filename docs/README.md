@@ -36,8 +36,8 @@ Exemplo: pagina/home
 ### Tipos de Commits
 
 
-- fix: Correção de bugs.
-Exemplo: fix: corrigir erro no cálculo de desconto
+- fix: Correção de minimos detalhes.
+Exemplo: fix: correção do posicionamento das divs
 
 - update: Criação de nova funcionalidade.
 Exemplo: update: criação do carrossel dos tickets
