@@ -31,40 +31,16 @@ Este projeto utiliza as seguintes tecnologias e ferramentas:
 - pagina/: Usado para criar pagina.
 Exemplo: pagina/home
 
-- feature/: Usado para novas funcionalidades.
-Exemplo: feature/adicionar-login-social
 
-- bugfix/: Usado para correção de bugs.
-Exemplo: bugfix/corrigir-botao-de-envio
-
-- hotfix/: Usado para correções urgentes em produção.
-Exemplo: hotfix/corrigir-falha-autenticacao
-
-- chore/: Usado para pequenas tarefas ou atualizações técnicas que não afetam o código funcional.
-Exemplo: chore/atualizar-documentacao
 
 ### Tipos de Commits
 
-- feat: Adição de uma nova funcionalidade.
-Exemplo: feat: implementar sistema de login com JWT
 
 - fix: Correção de bugs.
 Exemplo: fix: corrigir erro no cálculo de desconto
 
-- docs: Alterações na documentação.
-Exemplo: docs: atualizar README com instruções de instalação
-
-- style: Alterações de formatação e estilo (não afetam a lógica).
-Exemplo: style: ajustar espaçamento no arquivo CSS
-
-- refactor: Refatoração de código (melhorias sem adicionar novas funcionalidades).
-Exemplo: refactor: otimizar função de busca
-
-- test: Adição ou correção de testes.
-Exemplo: test: adicionar testes unitários para componente Header
-
-- chore: Atualizações gerais que não alteram código funcional (ex: atualizações de dependências).
-Exemplo: chore: atualizar pacotes NPM
+- update: Criação de nova funcionalidade.
+Exemplo: update: criação do carrossel dos tickets
 
 ### 4. Organização de Pastas e Arquivos
 
