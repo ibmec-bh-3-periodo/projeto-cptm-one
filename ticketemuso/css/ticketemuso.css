@@ -24,14 +24,14 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 10%;
+        height: 14%;
         color: #fff;
     }
 
     section{
         display: flex;
         flex-direction: column;
-        height: 82%;
+        height: 79%;
         width: 100%;
         align-items: center;
     }
