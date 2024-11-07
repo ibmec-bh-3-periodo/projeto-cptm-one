@@ -210,12 +210,15 @@ body {
         justify-content: center;
         margin-bottom: -15px;
         align-items: center;
+    
     }
 
     .input {
+        
         height: 70%;
         width: 90%;
     }
+
     .form-control{
         
         height: 60%;
@@ -378,8 +381,8 @@ body {
         flex: 0 0 auto; /* Impede o botão de crescer ou encolher */
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         text-align: center;
-        margin: 0px;
-        margin-left: 10px;
+        margin-right: 5px;
+        margin-left: 0px;
     }
 
     .buy-ticket .buy-icon {
