@@ -24,14 +24,14 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 10%;
+        height: 14%;
         color: #fff;
     }
 
     section{
         display: flex;
         flex-direction: column;
-        height: 82%;
+        height: 79%;
         width: 100%;
         align-items: center;
     }
@@ -60,12 +60,19 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 80%;
+        height: 100%;
     }	
+    footer a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        text-decoration: none;
+        color: white;
+    }
     footer div img {
         width: 100%;
         height: 100%;
-        
     }
     
     .home a {
@@ -73,5 +80,6 @@ body {
     }
     .saldo a {
         height: 100%;
+
     }
 }
