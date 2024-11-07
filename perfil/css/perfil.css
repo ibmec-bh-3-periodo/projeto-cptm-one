@@ -18,14 +18,14 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 10%;
+        height: 14%;
         color: #fff;
     }
     section{
         text-align: center;
         display: flex;
         flex-direction: column;
-        height: 83%;
+        height: 79%;
         
     }
     .fototext{
@@ -105,10 +105,17 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 80%;
+        height: 100%;
     }	
     footer div img {
-        width: 100%;
+        height: 60%;
+    }
+    footer a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         height: 100%;
+        text-decoration: none;
+        color: white;
     }
 }
