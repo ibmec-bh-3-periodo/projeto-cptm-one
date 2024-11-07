@@ -1,0 +1,398 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 430px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-family: 'Roboto', sans-serif;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    header {
+        padding-top: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 14%;
+        color: #fff;
+    }
+    nav{
+        display: flex;
+        height: 21%;
+        width: 100%;
+        flex-direction: column;
+        font-size: 1.5rem;
+        justify-content: center;
+        text-align: left;
+        margin: 0;
+    }
+
+    .textoticket {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 15%;
+        font-weight: 500;
+        width: 100%;        
+    }
+
+    .textoticket p{
+        margin: 0;
+    }
+    .tickets {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 85%;
+        width: 100%;
+    }
+    .carrossel {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .carrossel img {
+        width: 90%;
+        height: 100%;
+        border-radius: 10px;
+    }
+    .compra {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .imgcompra {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 58%;
+        background-color: #d3ccccf3;
+        width: 100%;
+        border-radius: 10px;
+    }
+    .mapasec {
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60%;
+        width: 100%;
+        overflow: hidden;
+}
+    .outrosec {
+        display: flex;
+        height: 40%;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: top;
+        margin-top: 30px;
+    }
+
+    .outrosec p {
+        text-align: center;
+        font-weight: 500;
+        font-size: 120%;
+    }
+
+    .map {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 42%;
+        height: 80%;
+        background-color: white;
+        border-radius: 20px;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 42%;
+        height: 80%;
+        background-color: white;
+        border-radius: 20px;
+    }
+    .map a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        color: #212529;
+    }	
+
+    .imgsec {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 30%;
+    }
+    .map img {
+        height: 80%;
+    }
+    .info img {
+        height: 90%;
+    }
+
+    .psec {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 20%;
+        text-decoration: none;
+    }
+    .mapa {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../img/mapa.png);
+        background-size: 110%;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 90%;
+        height: 100%;
+        color: white;  
+        border-radius: 20px;
+    }
+
+    form {
+        height: 70%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .form {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: -15px;
+        align-items: center;
+    }
+
+    .input {
+        height: 70%;
+        width: 90%;
+    }
+    .form-control{
+        
+        height: 60%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border-radius: 20px !important;
+    }
+    button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40%;
+        width: 20%;
+        border-radius: 20px;
+        background-color: #FF0000;
+        color: white;
+        font-size: 1.5rem;
+        font-weight: bold;
+        border-radius: 30px !important;
+        border: none;
+    }
+    .imgbotao {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 100%;
+    }
+    .imgbotao img {
+        width: 100%;
+        height: 100%;
+    }
+    footer {
+        position: fixed !important;
+        bottom: 0 !important;
+        width: 100%;
+        height: 7%;
+        background-color: #FF0000;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    } 
+    footer div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }	
+    footer a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        text-decoration: none;
+        color: white;
+    }
+    footer div img {
+        width: 100%;
+        height: 60%;
+    }
+}
+    
+    .home a {
+        height: 100%;
+        width: 100%;
+    }
+    .saldo a {
+        height: 100%;
+        width: 100%;
+    }
+    /* Estilos do carrossel */
+    .carousel-container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        max-width: 600px;
+        margin: 20px auto;
+        overflow: hidden;
+    }
+
+    .carousel {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        padding-left: 10px;
+    }
+
+    .carousel-track {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        transition: transform 0.5s ease;
+    }
+
+    .ticket {
+        display: flex;
+        align-items: center;
+        flex: 0 0 100%;
+        max-width: 50%;
+        height: 100%;
+        /* padding: 20px; */
+        margin: 10px;
+        background-color: #f0f0f0;
+        border-radius: 8px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.048);
+    }
+
+    .ticket img {
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+    }
+
+    /* Botões de navegação */
+    .carousel-btn {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 0px;
+        cursor: pointer;
+        font-size: 18px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1; /* Certifique-se de que os botões fiquem acima dos outros elementos */
+        width: 10%;
+    }
+
+    .prev {
+        left: 10px; /* Alinha o botão 'Voltar' 10px da borda esquerda */
+    }
+
+    .next {
+        right: 10px; /* Alinha o botão 'Próximo' 10px da borda direita */
+    }
+
+    /* Ajusta a visibilidade dos botões */
+    .carousel-btn:disabled {
+        visibility: hidden; /* Oculta o botão quando desativado */
+    }
+    /* Estilo para o botão "Comprar Tickets" */
+    .buy-ticket {
+        background-color: #FF0000; /* Fundo vermelho */
+        font-size: 16px;
+        border-radius: 8px; /* Bordas arredondadas */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px; /* Espaciamento interno do conteúdo */
+        width: 30%; /* Largura fixa */
+        height: 100%; /* Altura fixa */
+        box-sizing: border-box; /* Inclui padding no cálculo da altura e largura */
+        flex: 0 0 auto; /* Impede o botão de crescer ou encolher */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        margin: 0px;
+        margin-left: 10px;
+    }
+
+    .buy-ticket .buy-icon {
+        width: 40px; /* Tamanho do ícone */
+        height: 40px;
+    }
+    .buy-ticket a {
+        text-decoration: none; /* Remove o sublinhado */
+    }
+
+    .buy-ticket p {
+        color: #000000;
+        font-size: 16px;
+        font-weight: 500;
+        margin: 0;
+    }
