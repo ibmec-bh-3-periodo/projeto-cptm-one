@@ -72,8 +72,14 @@ body {
     }
     footer div img {
         width: 100%;
-        height: 60%;
+        height: 100%;
+    }
+    
+    .home a {
+        height: 100%;
+    }
+    .saldo a {
+        height: 100%;
 
     }
-
 }
