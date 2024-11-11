@@ -33,15 +33,13 @@
         </footer>
 
         <script>
-            var map = L.map('map').setView([-23.5505, -46.6333], 13); // São Paulo, Brasil
+            var map = L.map('map').setView([-23.5505, -46.6333], 20); // São Paulo, Brasil
             L.tileLayer('https://tile.jawg.io/jawg-streets/{z}/{x}/{y}.png?access-token=PQtOM8nvetA4UCUCLUDfnhG4br0fSjvyW5wW6yw24HfrmboFWuGXBABOiEMYE4bC', {
                 attribution: 'Map data © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.jawg.io">Jawg</a>',
                 maxZoom: 18
             }).addTo(map);
         
-            L.marker([-23.5505, -46.6333]).addTo(map)
-                .bindPopup('São Paulo, Brasil')
-                .openPopup();
+            L.marker([-23.5505, -46.6333]).addTo(map).bindPopup('São Paulo, Brasil').openPopup();
         
             var startMarker, endMarker, routeLayer;
         

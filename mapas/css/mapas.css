@@ -5,7 +5,7 @@
     width: 100%;
     border-radius: 30px;
     position: absolute;
-    z-index: 1;
+    z-index: 1;          
 }
 .tudo{
     display: flex;
@@ -35,6 +35,7 @@
     font-size: 1.5vh;
     border-radius: 20px;
     margin-left: 2vh;
+    text-align: center;
 
 }
 .pagina input[type="submit"] {

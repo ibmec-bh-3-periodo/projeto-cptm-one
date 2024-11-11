@@ -35,13 +35,13 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 10%;
+        height: 14%;
         color: #fff;
-    }
+    }       
 
-    .logo, .settings-icon {
-        height: 29px;
-    }
+        /* .logo, .settings-icon {
+            height: 29px;
+        } */
     .espacar{
         height: 2%;
         width: 100%;
@@ -165,10 +165,29 @@ body {
         display: flex;
         justify-content: space-around;
         align-items: center;
+    } 
+    footer div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }	
+    footer a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        text-decoration: none;
+        color: white;
     }
+    footer div img {
+        width: 100%;
+        height: 60%;
+    }
+}   
 
     .bb{
         width: 30px;
     }
-}
+
 
