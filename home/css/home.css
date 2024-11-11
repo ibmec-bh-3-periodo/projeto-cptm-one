@@ -155,7 +155,17 @@ body {
         height: 100%;
         text-decoration: none;
         color: #212529;
-    }	
+    }
+    .info a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        color: #212529;
+    }		
 
     .imgsec {
         display: flex;
