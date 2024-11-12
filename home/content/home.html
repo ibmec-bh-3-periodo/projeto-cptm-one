@@ -37,24 +37,24 @@
         <div class="mapasec">
             <div class="mapa">
                 <h1>Planejar Rota</h1>
-                <form action="submit">
+                <form action="/mapas/content/mapas.html" method="GET">
                     <div class="form">
                         <div class="input">
-                            <input type="text" placeholder="Digite o local de partida" class="form-control">
+                            <input type="text" name="start" placeholder="Digite o local de partida" class="form-control">
                         </div>
                         <div class="input">
-                            <input type="text" placeholder="Digite o local de destino" class="form-control">
+                            <input type="text" name="end" placeholder="Digite o local de destino" class="form-control">
                         </div>
-                            <button type="submit">
-                                <div class="imgbotao"><img src="/home/img/pra-cima (2).png" alt=""></div>
-                            </button>
-                        </div>
+                        <button type="submit">
+                            <div class="imgbotao"><img src="/home/img/pra-cima (2).png" alt=""></div>
+                        </button>
+                    </div>
                 </form>
             </div>
         </div>
         <div class="outrosec">
             <div class="map">
-                <a href="/mapas/content/mapas.html">
+                <a href="/mapa-foto/mapa-foto.html">
                   <div class="imgsec"><img src="/home/img/mapa (1).png" alt=""></div>
                   <div class="psec"><p>Mapa da Rede</p></div>
                 </a>
