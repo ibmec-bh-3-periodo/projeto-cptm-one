@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 432px) {
     body {
         font-family: 'Roboto', sans-serif;
         height: 100vh;
