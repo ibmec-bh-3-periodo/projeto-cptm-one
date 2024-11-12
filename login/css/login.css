@@ -1,9 +1,16 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100.5vh;
     width: 100%;
     background: linear-gradient(to top, red, white 80%);
+    overflow: hidden;
+
 }
 .ajustes {
     display: flex;
@@ -79,7 +86,7 @@ body {
     width: 204%;
     background-color: #FA6971;
     border: 0px;
-    margin-left: -50%;
+    margin-left: -52%;
     height: 20%;
     font-family: 'Roboto', sans-serif;
     font-size: 0.8em;
@@ -92,4 +99,5 @@ body {
 }
 .trem{
     margin-left: 5%;
+
 }
