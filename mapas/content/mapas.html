@@ -8,18 +8,20 @@
     </head>
     <body>
         <div class="tudo">
-            <div id="map"></div>
-            <div class="pagina">
-                <form id="searchForm">
-                    <input type="text" id="searchInputStart" name="pesquisaStart" placeholder="Local de partida">
-                    <input type="text" id="searchInputEnd" name="pesquisaEnd" placeholder="Local de destino">
-                    <p></p>
-                    <input type="submit" value="Pesquisar">
-                </form>
+            <div id="map">
             </div>
+                <div class="pagina">
+                    <div class="form">
+                        <form id="searchForm">
+                            <input type="text" class="form-control" id="searchInputStart" name="pesquisaStart" placeholder="Local de partida">
+                            <input type="text" id="searchInputEnd" class="form-control" name="pesquisaEnd" placeholder="Local de destino">
+                            <p></p>
+                            <input type="submit" value="Pesquisar">
+                        </form>
+                    </div>
+                </div>
         </div>
-        <div class="cinza">
-        </div>
+
         <footer>
             <div class="saldo">
                 <a href="/pagamento/content/pagamento.html"><img src="/home/img/compras (2).png" alt=""></a>
@@ -33,7 +35,7 @@
         </footer>
 
         <script>
-            var map = L.map('map').setView([-23.5505, -46.6333], 20); // São Paulo, Brasil
+            var map = L.map('map').setView([-23.5505, -46.6333], 30); // São Paulo, Brasil
             L.tileLayer('https://tile.jawg.io/jawg-streets/{z}/{x}/{y}.png?access-token=PQtOM8nvetA4UCUCLUDfnhG4br0fSjvyW5wW6yw24HfrmboFWuGXBABOiEMYE4bC', {
                 attribution: 'Map data © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.jawg.io">Jawg</a>',
                 maxZoom: 18
