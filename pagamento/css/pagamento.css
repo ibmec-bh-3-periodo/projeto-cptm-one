@@ -35,26 +35,27 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 10%;
+        height: 14%;
         color: #fff;
-    }
+    }       
 
-    .logo, .settings-icon {
-        height: 29px;
-    }
+        /* .logo, .settings-icon {
+            height: 29px;
+        } */
     .espacar{
-        height: 5%;
+        height: 2%;
         width: 100%;
     }
 
     .ticket-card {
-        width: 100%;
+        height: 200px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
     .acima{
+        height: 40%;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -64,27 +65,29 @@ body {
     .faixa{
         background-color: #ff0000;
         width: 100%;
-        height: 10px;
+        height: 15px;
     }
     .ticket-info {
-        height: 100px;
+        height: 180px;
         width: 70%;
         background-color: rgb(192, 190, 190);
         border-radius: 10px;
         display: flex;
         flex-direction: column;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        
     }
     .posfaixa{
-        padding-top: 10px;
-        padding-left: 25px;
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
     }
     .availability{
-        font-size: small;
+        font-size: 20px;
     }
     .ticket-logo {
-        width: 60px;
+        width: 90px;
         height: auto;
+        padding-left: 5px;
     }
     .separar{
         width: 60px;
@@ -99,6 +102,7 @@ body {
         font-size: 14px;
         color: #060404;
         margin-bottom: 5px;
+        padding-right: 10px;
     }
 
     .ticket-details .price {
@@ -108,12 +112,10 @@ body {
     }
 
     .ticket-details .availability {
-        font-size: 12px;
+        font-size: 50px;
         color: #666;
         margin-top: 5px;
         background-color: #eee;
-        padding: 5px;
-        border-radius: 5px;
     }
 
     .purchase-options {
@@ -128,12 +130,12 @@ body {
     .payment-method {
         display: flex;
         align-items: center;
-        padding: 10px 0;
+        padding: 13px;
         border-bottom: 1px solid #ddd;
     }
 
     .payment-method img {
-        width: 30px;
+        width: 40px;
         height: auto;
         margin-right: 10px;
     }
@@ -141,8 +143,8 @@ body {
     .history-button {
         display: block;
         width: 90%;
+        height: 50px;
         margin: 20px auto;
-        padding: 10px;
         background-color: #f4f4f4;
         border: none;
         border-radius: 5px;
@@ -163,10 +165,29 @@ body {
         display: flex;
         justify-content: space-around;
         align-items: center;
+    } 
+    footer div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }	
+    footer a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        text-decoration: none;
+        color: white;
     }
+    footer div img {
+        width: 100%;
+        height: 60%;
+    }
+}   
 
     .bb{
         width: 30px;
     }
-}
+
 
