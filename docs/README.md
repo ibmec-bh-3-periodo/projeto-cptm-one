@@ -103,3 +103,17 @@ vou fazer pagina de perfil
 fiz design para melhorar pagina de mapa
 vou fazer pagina de login
 
+--08 de novembro--
+- Lucas Buccini:
+fiz carrosel dos tickets
+vou fazer ajustar fotter com novos icones
+- Marcello Rocha:
+fiz design da pagina de ticket em uso
+vou procurar API para mapa da rede 
+- Mateus Milanez: 
+fiz design de perfil
+vou concertar pagina de pagamento
+- Lucas Tergilene:
+fiz design pagina login
+vou fazer pagina de informação
+
