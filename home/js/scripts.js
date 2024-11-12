@@ -33,3 +33,22 @@ prevBtn.addEventListener('click', () => {
 
 // Inicializar a visibilidade dos botões
 updateCarousel();
+
+// Função para ler os parâmetros da URL
+function getQueryParam(param) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(param);
+}
+
+// Obter os valores dos parâmetros "start" e "end"
+const startQuery = getQueryParam('start');
+const endQuery = getQueryParam('end');
+
+// Se os valores de partida e destino existirem, faça a pesquisa
+if (startQuery && endQuery) {
+    document.getElementById('searchInputStart').value = startQuery;
+    document.getElementById('searchInputEnd').value = endQuery;
+
+    // Simular o envio do formulário para disparar a função de pesquisa
+    document.getElementById('searchForm').dispatchEvent(new Event('submit'));
+}

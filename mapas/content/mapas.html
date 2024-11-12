@@ -105,5 +105,28 @@
             });
         </script>            
         <a href="/home/content/home.html"><img class="seta" src="/mapas/img/icone-fleche-droite-rouge.png" alt=""></a>
+        <script>
+            // Função para ler os parâmetros da URL
+            function getQueryParam(param) {
+                const urlParams = new URLSearchParams(window.location.search);
+                return urlParams.get(param);
+            }
+        
+            // Executa ao carregar a página
+            window.onload = function() {
+                const startQuery = getQueryParam('start');
+                const endQuery = getQueryParam('end');
+        
+                // Se os parâmetros existirem, preencha os campos e submeta o formulário
+                if (startQuery && endQuery) {
+                    document.getElementById('searchInputStart').value = startQuery;
+                    document.getElementById('searchInputEnd').value = endQuery;
+        
+                    // Simula o envio do formulário para planejar a rota
+                    document.getElementById('searchForm').dispatchEvent(new Event('submit'));
+                }
+            }
+        </script>
+        
     </body>
 </html>
