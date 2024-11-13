@@ -1,9 +1,17 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100.5vh;
     width: 100%;
     background: linear-gradient(to top, red, white 80%);
+    overflow: hidden;
+    margin-top: 1px;
+
 }
 .ajustes {
     display: flex;
@@ -53,7 +61,7 @@ body {
     flex-direction: column;
     margin-top: -7%;
     width: 190%;
-    margin-left: -45%;
+    margin-left: -46%;
     height: 20%;
     border: solid 2px #000000;
 }
@@ -79,7 +87,7 @@ body {
     width: 204%;
     background-color: #FA6971;
     border: 0px;
-    margin-left: -50%;
+    margin-left: -52%;
     height: 20%;
     font-family: 'Roboto', sans-serif;
     font-size: 0.8em;
@@ -92,4 +100,5 @@ body {
 }
 .trem{
     margin-left: 5%;
+
 }
