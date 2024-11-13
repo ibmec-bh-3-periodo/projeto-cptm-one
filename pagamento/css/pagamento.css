@@ -37,7 +37,29 @@ body {
         align-items: center;
         height: 14%;
         color: #fff;
-    }       
+    }
+    .settings {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    .settings img {
+        height: 58px;
+        width: 58px;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    .logo img {
+        width: 100%;
+        height: 100%;
+    }
+           
 
         /* .logo, .settings-icon {
             height: 29px;
