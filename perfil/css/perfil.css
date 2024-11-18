@@ -71,7 +71,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 20px 0;
+
     }
     
     form label {
@@ -88,10 +88,10 @@
     }
     .boti{
         display: flex;
+        height: 30%;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        padding-top: 40px;
     }
     .gray-button {
         display: flex;
