@@ -3,102 +3,270 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
-body {
-    display: flex;
-    flex-direction: column;
-    height: 100.5vh;
-    width: 100%;
-    background: linear-gradient(to top, red, white 80%);
-    overflow: hidden;
-    margin-top: 1px;
+@media screen and (max-width: 430px){
+    body {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Roboto', sans-serif;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+        background: linear-gradient(to top, red, white 80%);
+        overflow: hidden !important;
 
-}
-.ajustes {
-    display: flex;
-    justify-content: right;
-    margin-right: 2vh;
-    margin-top: 2vh;
-}
-.login{
-    display: flex;
-    height: 55%;
-    width: 90%;
-    background-color: #E7E3E3;
-    margin-top: 35%;
-    margin-left: 5%;
-    flex-direction: column;
-    border-radius: 0.5vh;
-}
-.cptm{
-    display: flex;
-    height: 24%;
-    width: 27%;
-    background-color: #E7E3E3;
-    margin-left: 37%;
-    margin-top: 3%;
-}
-.login__container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    padding-top: 10%;
-}
-.login__container__title{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 450;
-    margin-top: -10%;
-}
-.login__container__title2{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 450;
-    margin-top: -4%;
-    padding-bottom: 10%;
-}
-.login__container__input{
-    display: flex;
-    flex-direction: column;
-    margin-top: -7%;
-    width: 190%;
-    margin-left: -46%;
-    height: 20%;
-    border: solid 2px #000000;
-}
-.mini-textos{
-    font-family: 'Roboto', sans-serif;
-    margin-left: -45%;
-    font-size: 0.8em;
-    font-weight: 450;
-}
-.senha{
-    font-family: 'Roboto', sans-serif;
-    margin-left: -50%;
-    font-size: 0.8em;
-    font-weight: 450;
-    margin-left: 90%;
-    white-space: nowrap;
-}
-.login__container__button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5%;
-    width: 204%;
-    background-color: #FA6971;
-    border: 0px;
-    margin-left: -52%;
-    height: 20%;
-    font-family: 'Roboto', sans-serif;
-    font-size: 0.8em;
-    font-weight: 450;
-    border-radius: 0.2vh;
+    }
+    .ajustes {
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        height: 10%;
+        width: 100%;
+        padding-right: 2vh;
+        padding-top: 2vh;
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 65%;
+        width: 100%;
+    }
+    .login{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80%;
+        width: 95%;
+        background-color: #E7E3E3;
+        flex-direction: column;
+        border-radius: 0.5vh;
+    }
+    .cptm{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 24%;
+        width: 27%;
+        background-color: #E7E3E3;
+        margin-top: 3%;
+    }
+    .login__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        padding-top: 10%;
+    }
+    .login__container__title{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 450;
+        margin-top: -10%;
+    }
+    .login__container__title2{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 450;
+        margin-top: -4%;
+        padding-bottom: 10%;
+    }
+    .login__container__input{
+        display: flex;
+        flex-direction: column;
+        margin-top: -7%;
+        width: 190%;
+        margin-left: -46%;
+        height: 20%;
+        border: solid 2px #000000;
+    }
+    .mini-textos{
+        font-family: 'Roboto', sans-serif;
+        margin-left: -45%;
+        font-size: 0.8em;
+        font-weight: 450;
+    }
+    .senha{
+        font-family: 'Roboto', sans-serif;
+        margin-left: -50%;
+        font-size: 0.8em;
+        font-weight: 450;
+        margin-left: 90%;
+        white-space: nowrap;
+    }
+    .login__container__button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%; 
+        width: 200%;
+        background-color: #FA6971;
+        border: 0px;
+        margin-left: -52%;
+        height: 20%;
+        font-family: 'Roboto', sans-serif;
+        font-size: 0.8em;
+        font-weight: 450;
+        border-radius: 0.2vh;
 
-}
-.red-text {
-    color: red;
-}
-.trem{
-    margin-left: 5%;
+    }
+    .red-text {
+        color: red;
+    }
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        height: 25%;
+        width: 100%;
+        overflow: hidden;
 
+    }
+    .trem{
+        margin-left: 10%;
+        height: 100%;
+        overflow: hidden;
+    }
+    html, body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        height: 100%;
+        overflow: hidden; /* Garante que não haja barras de rolagem */
+    }
+    
+        
+}
+@media screen and (max-width: 390px){
+    body {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Roboto', sans-serif;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+        background: linear-gradient(to top, red, white 80%);
+        overflow: hidden !important;
+
+    }
+    .ajustes {
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        height: 10%;
+        width: 100%;
+        padding-right: 2vh;
+        padding-top: 2vh;
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 65%;
+        width: 100%;
+    }
+    .login{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 90%;
+        width: 95%;
+        background-color: #E7E3E3;
+        flex-direction: column;
+        border-radius: 0.5vh;
+    }
+    .cptm{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 24%;
+        width: 27%;
+        background-color: #E7E3E3;
+        margin-top: 3%;
+    }
+    .login__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        padding-top: 10%;
+    }
+    .login__container__title{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 450;
+        margin-top: -10%;
+    }
+    .login__container__title2{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 450;
+        margin-top: -4%;
+        padding-bottom: 10%;
+    }
+    .login__container__input{
+        display: flex;
+        flex-direction: column;
+        margin-top: -7%;
+        width: 190%;
+        margin-left: -46%;
+        height: 20%;
+        border: solid 2px #000000;
+    }
+    .mini-textos{
+        font-family: 'Roboto', sans-serif;
+        margin-left: -45%;
+        font-size: 0.8em;
+        font-weight: 450;
+    }
+    .senha{
+        font-family: 'Roboto', sans-serif;
+        margin-left: -50%;
+        font-size: 0.8em;
+        font-weight: 450;
+        margin-left: 90%;
+        white-space: nowrap;
+    }
+    .login__container__button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%; 
+        width: 180%;
+        background-color: #FA6971;
+        border: 0px;
+        margin-left: -40%;
+        height: 20%;
+        font-family: 'Roboto', sans-serif;
+        font-size: 0.8em;
+        font-weight: 450;
+        border-radius: 0.2vh;
+
+    }
+    .red-text {
+        color: red;
+    }
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        height: 25%;
+        width: 100%;
+        overflow: hidden;
+
+    }
+    .trem{
+        margin-left: 10%;
+        height: 100%;
+        overflow: hidden;
+    }
+    html, body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        height: 100%;
+        overflow: hidden; /* Garante que não haja barras de rolagem */
+    }
+    
 }
