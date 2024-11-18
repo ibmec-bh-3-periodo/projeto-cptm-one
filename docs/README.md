@@ -103,6 +103,20 @@ vou fazer pagina de perfil
 fiz design para melhorar pagina de mapa
 vou fazer pagina de login
 
+--04 de Novembro--
+- Lucas Buccini:
+fiz reajustei bostoes de informacao e mapa da rota
+vou fazer colocar botao depois dos tickets para comprar mais 
+- Marcello Rocha:
+fiz troquei a cor dos icones do rodape
+vou fazer icones da pagina de pagamento
+- Mateus Milanez: 
+fiz pagina de pagamento parecida com o ticket 
+vou colocar icones corretos escolhidos
+- Lucas Tergilene:
+fiz melhorei caixa de digitar do planejar trajeto na home
+vou fazer design pagina de login
+
 --08 de novembro--
 - Lucas Buccini:
 fiz carrosel dos tickets
@@ -117,3 +131,16 @@ vou concertar pagina de pagamento
 fiz design pagina login
 vou fazer pagina de informação
 
+--17 de novembro--
+- Lucas Buccini:
+fiz fluxo de excecao para email e senha no login
+vou fazer ajustar a responsividade 
+- Marcello Rocha:
+fiz pagina de mapa de linha
+vou fazer arrumar pagina de ticket
+- Mateus Milanez: 
+fiz concertei pagina de pagamento 
+vou fazer colocar imagens que faltam na pagina de perfil
+- Lucas Tergilene:
+fiz pagina de informação
+vou fazer reajustar pagina de login
