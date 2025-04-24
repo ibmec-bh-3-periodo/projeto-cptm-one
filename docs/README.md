@@ -22,7 +22,7 @@ Nosso web app tem como objetivo, facilitar a vida de usuários do metro. Com a p
 
 Este projeto utiliza as seguintes tecnologias e ferramentas:
 
-- **Linguagens:** HTML, CSS e JS
+- **Linguagens:** HTML, CSS, JS e TS
 - **Framework:** Bootstrap
 - **Versionamento de código:** Git
 
@@ -49,6 +49,7 @@ Exemplo: update: criação do carrossel dos tickets
   - **/css**: Folhas de estilo CSS.
   - **/js**: Arquivos JS.
   - **/img**: Imagens.
+  - **/ts**: Arquivos TS.
 - **/docs**: Documentação do projeto.
 
 
@@ -57,7 +58,9 @@ Exemplo: update: criação do carrossel dos tickets
 1. **Calculo de rotas:** Usuários podem calcular a melhor rota para chegar no destino.
 2. **Compra de passagem:** Usuários podem comprar passagens pelo app.
 3. **Visualização de mapa:** Visualização do mapa das linhas de metro, com localização em tempo real.
-
+4. **Ampla gama de compatibilidade** Visualização do programa em varios dispositivos ( diferentes modelos de celulares )
+5. **Visualização do histórico** Visualização do historico de compras.
+6. **Histórico de uso de tickets e pagamentos feitos** Historico de uso e transferencia (dinheiro e passagens)
 ---
 
 ## 6. Daily's
