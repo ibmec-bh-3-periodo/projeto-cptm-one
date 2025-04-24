@@ -5,9 +5,9 @@
 
 ## Integrantes
 
-- Lucas Buccini: Scrum Master/Desenvolvimento
+- Lucas Buccini: Desenvolvimento
 - Marcello Rocha: Desenvolvimento
-- Mateus Milanez: Desenvolvimento
+- Mateus Milanez: Scrum Master/Desenvolvimento
 - Lucas Tergilene: Desenvolvimento
 
 # 1. Nome do Projeto: CPTM ONE
