@@ -62,9 +62,11 @@ Exemplo: update: criação do carrossel dos tickets
 5. **Visualização do histórico** Visualização do historico de compras.
 6. **Histórico de uso de tickets e pagamentos feitos** Historico de uso e transferencia (dinheiro e passagens)
 ---
-
+### 6. Abertura de sprint
 ----------///-----------
 Abertura de Sprint 1
+----------///-----------
+
 
 OBJETIVOS
 
@@ -93,7 +95,7 @@ banco de dados de usuarios e ter a verificação
 
 
 
-## 6. Daily's
+## 7. Daily's
 --15 de Outubro--
 - Lucas Buccini:
 fiz pagina da home e criei estrutura de controle de versão do grupo
