@@ -1,6 +1,6 @@
 # [Grupo 2] CPTM ONE
 
-- [Link dos slides](https://docs.google.com/presentation/d/1WhcmPL6o3zCwUjxxyQNF7d44-AmTVTR8ej00qzn1UnQ/edit?usp=sharing)
+- [Link dos slides]
 - [Modelo de registro de Dailies](https://docs.google.com/document/d/1sg9-XnS0XWlmYKIeP0JerL6xg7LS9sgfdZZyv98aP5c/edit?usp=sharing)
 
 ## Integrantes
@@ -62,6 +62,36 @@ Exemplo: update: criação do carrossel dos tickets
 5. **Visualização do histórico** Visualização do historico de compras.
 6. **Histórico de uso de tickets e pagamentos feitos** Historico de uso e transferencia (dinheiro e passagens)
 ---
+
+----------///-----------
+Abertura de Sprint 1
+
+OBJETIVOS
+
+Organizaão de pastas.
+Suporte de dispositivo.
+Cadastro de usuario.
+
+DIVISÃO 
+
+Mateus - Suporte para outros dispositivos
+Lucas tergilene - Suporte para outros dispositivos
+Lucas Buccini - Organização de pastas e Cadastro de usuario
+Marcello - Cadastro de usuarios
+
+FERRAMENTAS/TECNOLOGIAS
+
+TypeScripts - cadastro
+HTML/CSS - responsividade
+
+
+CRITÉRIOS DE ENTREGA
+
+funcionar em outros dispositivos
+banco de dados de usuarios e ter a verificação
+
+
+
 
 ## 6. Daily's
 --15 de Outubro--
