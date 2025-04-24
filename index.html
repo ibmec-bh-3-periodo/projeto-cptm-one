@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/login/css/login.css">
+    <link rel="stylesheet" href="./frontend/src/css/login.css">
 </head>
 <body>
     <header class="ajustes">
-        <img src="/login/img/settings.png" alt="">
+        <img src="./frontend/src/images/imglogin/settings.png" alt="">
     </header>
     <section>
         <div class="login">
-            <img class="cptm" src="/login/img/cptm.png" alt="">
+            <img class="cptm" src="./frontend/src/images/imglogin/cptm.png" alt="">
             <div class="login__container">
                 <p class="login__container__title">BEM VINDO A CPTM </p>
                 <p class="login__container__title2">Movendo vidas, impulsionando destinos</p>
-                <form action="/perfil/content/perfil.html" id="signupForm" method="POST" onsubmit="saveEmail()">
+                <form action="./frontend/src/pages/perfil.html" id="signupForm" method="POST" onsubmit="saveEmail()">
                     <p class="mini-textos">Email</p>
                     <input type="text" name="login" class="login__container__input" id="email">
                     <p class="mini-textos">Senha</p>
@@ -30,9 +30,9 @@
         </div>
     </section>      
     <footer>
-        <img class="trem" src="/login/img/trem.png" alt="">
+        <img class="trem" src="./frontend/src/images/imglogin/trem.png" alt="">
     </footer>
-    <script src="/login/js/scripts.js"></script>
+    <script src="./frontend/src/js/login.js"></script>
     <script>
         function saveEmail() {
             const email = document.getElementById('email').value;
