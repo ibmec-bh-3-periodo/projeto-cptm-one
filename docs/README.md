@@ -70,27 +70,27 @@ Abertura de Sprint 1
 
 OBJETIVOS
 
-Organizaão de pastas.
-Suporte de dispositivo.
-Cadastro de usuario.
+-Organizaão de pastas.
+-Suporte de dispositivo.
+-Cadastro de usuario.
 
 DIVISÃO 
 
-Mateus - Suporte para outros dispositivos
-Lucas tergilene - Suporte para outros dispositivos
-Lucas Buccini - Organização de pastas e Cadastro de usuario
-Marcello - Cadastro de usuarios
+Mateus - Suporte para outros dispositivos.
+Lucas tergilene - Suporte para outros dispositivos.
+Lucas Buccini - Organização de pastas e Cadastro de usuario.
+Marcello - Cadastro de usuarios.
 
 FERRAMENTAS/TECNOLOGIAS
 
-TypeScripts - cadastro
-HTML/CSS - responsividade
+TypeScripts - cadastro.
+HTML/CSS - responsividade.
 
 
 CRITÉRIOS DE ENTREGA
 
-funcionar em outros dispositivos
-banco de dados de usuarios e ter a verificação
+-funcionar em outros dispositivos.
+-banco de dados de usuarios e ter a verificação
 
 
 
