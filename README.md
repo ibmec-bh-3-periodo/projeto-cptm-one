@@ -64,6 +64,7 @@ Este projeto utiliza as seguintes tecnologias e ferramentas:
     - **/js**: Arquivos JS.
     - **/img**: Imagens.
     - **/testes**: Arquivos de teste.
+
 -**/backend**: Contém os odigos relacionados ao backend
   - **/src**: Contém o código fonte do projeto.
     - **/services**: Aqui é a pasta onde vai ficar as funções criadas, em ts.
