@@ -70,10 +70,10 @@ Este projeto utiliza as seguintes tecnologias e ferramentas:
     - **/services**: Aqui é a pasta onde vai ficar as funções criadas, em ts.
     - **app.ts**: Arquivo principal da nosa api, que fará o acesso com base nas funções utilizadas
     - **/build**: Arquivos JS compilados, a partir do ts.
--**package.json**
--**package-lock.json**
--**README.md**
--**tsconfig.json**
+- **package.json**
+- **package-lock.json**
+- **README.md**
+- **tsconfig.json**
 
 
 ### 5. Requisitos Funcionais(backlog)
