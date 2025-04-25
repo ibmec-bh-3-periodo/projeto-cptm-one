@@ -29,18 +29,31 @@ Este projeto utiliza as seguintes tecnologias e ferramentas:
 ### Padrão para nomes de branches
 
 - pagina/: Usado para criar pagina.
-Exemplo: pagina/home
+  
+- feature/nome-da-feature: novas funcionalidades
+
+- bugfix/nome-do-bug: correções de bugs
+
+- hotfix/nome-do-hotfix: correções críticas diretamente em produção
 
 
 
 ### Tipos de Commits
 
 
-- fix: Correção de minimos detalhes.
-Exemplo: fix: correção do posicionamento das divs
+- feat: nova funcionalidade
 
-- update: Criação de nova funcionalidade.
-Exemplo: update: criação do carrossel dos tickets
+- fix: correção de bug
+
+- chore: tarefas de configuração, dependências, etc
+
+- refactor: melhorias de código sem mudar funcionalidade
+
+- docs: mudanças no README ou documentação
+
+- style: mudanças de estilo (espaçamento, identação, etc)
+
+- test: adição ou correção de testes
 
 ### 4. Organização de Pastas e Arquivos
 
@@ -50,7 +63,6 @@ Exemplo: update: criação do carrossel dos tickets
   - **/js**: Arquivos JS.
   - **/img**: Imagens.
   - **/ts**: Arquivos TS.
-- **/docs**: Documentação do projeto.
 
 
 ### 5. Requisitos Funcionais(backlog)
