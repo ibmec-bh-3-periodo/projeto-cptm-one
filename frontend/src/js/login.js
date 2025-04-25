@@ -9,7 +9,7 @@ document.getElementById('signupForm').addEventListener('submit', function(event)
         try {
             validateSenha(senhaInput);
             alert("Login efetuado com sucesso!")
-            window.location.href ="/home/content/home.html";
+            window.location.href ="./frontend/src/pages/home.html";
         } catch (error) {
             alert('Erro: ' + error.message);
         }
