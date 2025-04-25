@@ -57,12 +57,22 @@ Este projeto utiliza as seguintes tecnologias e ferramentas:
 
 ### 4. Organização de Pastas e Arquivos
 
-- **/src**: Contém o código fonte do projeto.
-  - **/content**: Arquivos HTML.
-  - **/css**: Folhas de estilo CSS.
-  - **/js**: Arquivos JS.
-  - **/img**: Imagens.
-  - **/ts**: Arquivos TS.
+-**/frontend**: Contém todas os codigos feitos no frontend
+  - **/src**: Contém o código fonte do projeto.
+    - **/content**: Arquivos HTML.
+    - **/css**: Folhas de estilo CSS.
+    - **/js**: Arquivos JS.
+    - **/img**: Imagens.
+    - **/testes**: Arquivos de teste.
+-**/backend**: Contém os odigos relacionados ao backend
+  - **/src**: Contém o código fonte do projeto.
+    - **/services**: Aqui é a pasta onde vai ficar as funções criadas, em ts.
+    - **app.ts**: Arquivo principal da nosa api, que fará o acesso com base nas funções utilizadas
+    - **/build**: Arquivos JS compilados, a partir do ts.
+-**package.json**
+-**package-lock.json**
+-**README.md**
+-**tsconfig.json**
 
 
 ### 5. Requisitos Funcionais(backlog)
