@@ -6,13 +6,13 @@
 - [ ] Cadastro de usuário
 
 ## 👥 Distribuição de Tarefas
-| Integrante          | Tarefa                                | Prazo         |
-|---------------------|---------------------------------------|---------------|
-| Mateus              | Suporte para outros dispositivos      | DD/MM/AAAA    |
-| Lucas Tergilene     | Suporte para outros dispositivos      | DD/MM/AAAA    |
-| Lucas Buccini       | Organização de pastas                 | DD/MM/AAAA    |
-| Lucas Buccini       | Cadastro de usuário                   | DD/MM/AAAA    |
-| Marcello            | Cadastro de usuário                   | DD/MM/AAAA    |
+| Integrante          | Tarefa                                     | Prazo         |
+|---------------------|--------------------------------------------|---------------|
+| Mateus              | Suporte para outros dispositivos           | DD/MM/AAAA    |
+| Lucas Tergilene     | Suporte para outros dispositivos           | DD/MM/AAAA    |
+| Lucas Buccini       | Organização de pastas/Cadastro de usuarios | DD/MM/AAAA    |
+| Lucas Buccini       | Cadastro de usuário                        | DD/MM/AAAA    |
+| Marcello            | Cadastro de usuário                        | DD/MM/AAAA    |
 
 ## 🛠️ Ferramentas e Tecnologias Previstas
 - TypeScript (cadastro)
