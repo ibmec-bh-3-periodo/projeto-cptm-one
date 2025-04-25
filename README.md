@@ -43,7 +43,7 @@ Este projeto utiliza as seguintes tecnologias e ferramentas:
 
 - feat: nova funcionalidade
 
-- fix: correção de bug
+- fix: correção em geral
 
 - chore: tarefas de configuração, dependências, etc
 
