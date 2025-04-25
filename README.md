@@ -57,7 +57,7 @@ Este projeto utiliza as seguintes tecnologias e ferramentas:
 
 ### 4. Organização de Pastas e Arquivos
 
--**/frontend**: Contém todas os codigos feitos no frontend
+- **/frontend**: Contém todas os codigos feitos no frontend
   - **/src**: Contém o código fonte do projeto.
     - **/content**: Arquivos HTML.
     - **/css**: Folhas de estilo CSS.
@@ -65,7 +65,7 @@ Este projeto utiliza as seguintes tecnologias e ferramentas:
     - **/img**: Imagens.
     - **/testes**: Arquivos de teste.
 
--**/backend**: Contém os odigos relacionados ao backend
+- **/backend**: Contém os odigos relacionados ao backend
   - **/src**: Contém o código fonte do projeto.
     - **/services**: Aqui é a pasta onde vai ficar as funções criadas, em ts.
     - **app.ts**: Arquivo principal da nosa api, que fará o acesso com base nas funções utilizadas
