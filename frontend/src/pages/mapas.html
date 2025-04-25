@@ -4,7 +4,7 @@
         <title></title>
         <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
-        <link rel="stylesheet" href="/mapas/css/mapas.css">
+        <link rel="stylesheet" href="../css/mapas.css">
     </head>
     <body>
         <div class="tudo">
@@ -23,16 +23,22 @@
         </div>
 
         <footer>
-            <div class="saldo">
-                <a href="/pagamento/content/pagamento.html"><img src="/home/img/compras (2).png" alt=""></a>
-            </div>
-            <div class="home">
-                <a href="/home/content/home.html"><img src="/home/img/casa (3).png" alt=""></a>
-            </div>
-            <div class="perfil">
-                <a href="/perfil/content/perfil.html"><img src="/home/img/solteiro (2).png" alt=""></a>
-            </div>
-        </footer>
+            <a href="../pages/pagamento.html">
+              <div class="saldo">
+                <img src="../images/imghome/compras (2).png" alt="">
+              </div>
+            </a>
+            <a href="../pages/home.html">
+              <div class="home">
+                <img src="../images/imghome/casa (3).png" alt="">
+              </div>
+            </a>  
+            <a href="../pages/perfil.html">
+              <div class="perfil">
+                <img src="../images/imghome/solteiro (2).png" alt="">
+              </div>
+            </a>
+    </footer>
 
         <script>
             var map = L.map('map').setView([-23.5505, -46.6333], 30); // São Paulo, Brasil
@@ -104,7 +110,7 @@
                 .catch(error => console.error('Erro:', error));
             });
         </script>            
-        <a href="/home/content/home.html"><img class="seta" src="/mapas/img/icone-fleche-droite-rouge.png" alt=""></a>
+        <a href="./home.html"><img class="seta" src="../images/imgmapas/icone-fleche-droite-rouge.png" alt=""></a>
         <script>
             // Função para ler os parâmetros da URL
             function getQueryParam(param) {
