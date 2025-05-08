@@ -1,272 +1,228 @@
-body{
+/* Estilos base para mobile-first */
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to top, red, white 80%);
+    overflow-x: hidden;
 }
-@media screen and (max-width: 430px){
-    body {
-        display: flex;
-        flex-direction: column;
-        font-family: 'Roboto', sans-serif;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        width: 100vw;
-        background: linear-gradient(to top, red, white 80%);
-        overflow: hidden !important;
 
-    }
-    .ajustes {
-        display: flex;
-        align-items: center;
-        justify-content: right;
-        height: 10%;
-        width: 100%;
-        padding-right: 2vh;
-        padding-top: 2vh;
-    }
-    section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 65%;
-        width: 100%;
-    }
-    .login{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 80%;
-        width: 95%;
-        background-color: #E7E3E3;
-        flex-direction: column;
-        border-radius: 0.5vh;
-    }
-    .cptm{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 24%;
-        width: 27%;
-        background-color: #E7E3E3;
-        margin-top: 3%;
-    }
-    .login__container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 100%;
-        width: 100%;
-        padding-top: 10%;
-    }
-    .login__container__title{
-        font-family: 'Roboto', sans-serif;
-        font-weight: 450;
-        margin-top: -10%;
-    }
-    .login__container__title2{
-        font-family: 'Roboto', sans-serif;
-        font-weight: 450;
-        margin-top: -4%;
-        padding-bottom: 10%;
-    }
-    .login__container__input{
-        display: flex;
-        flex-direction: column;
-        margin-top: -7%;
-        width: 190%;
-        margin-left: -46%;
-        height: 20%;
-        border: solid 2px #000000;
-    }
-    .mini-textos{
-        font-family: 'Roboto', sans-serif;
-        margin-left: -45%;
-        font-size: 0.8em;
-        font-weight: 450;
-    }
-    .senha{
-        font-family: 'Roboto', sans-serif;
-        margin-left: -50%;
-        font-size: 0.8em;
-        font-weight: 450;
-        margin-left: 90%;
-        white-space: nowrap;
-    }
-    .login__container__button{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 5%; 
-        width: 200%;
-        background-color: #FA6971;
-        border: 0px;
-        margin-left: -52%;
-        height: 20%;
-        font-family: 'Roboto', sans-serif;
-        font-size: 0.8em;
-        font-weight: 450;
-        border-radius: 0.2vh;
+html, body {
+    height: 100%;
+    width: 100%;
+}
 
-    }
-    .red-text {
-        color: red;
-    }
-    footer{
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        height: 25%;
-        width: 100%;
-        overflow: hidden;
+/* Header */
+.ajustes {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 15px 15px 0 0;
+}
 
-    }
-    .trem{
-        margin-left: 10%;
-        height: 100%;
-        overflow: hidden;
-    }
-    html, body {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        height: 100%;
-        overflow: hidden; /* Garante que não haja barras de rolagem */
+.ajustes img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Seção principal */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-grow: 1;
+    padding: 20px 0;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    max-width: 400px;
+    background-color: #E7E3E3;
+    border-radius: 8px;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cptm {
+    width: 30%;
+    max-width: 120px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.login__container {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login__container__title,
+.login__container__title2 {
+    text-align: center;
+    margin: 5px 0;
+    font-weight: 500;
+}
+
+.login__container__title {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+
+.login__container__title2 {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mini-textos {
+    align-self: flex-start;
+    font-size: 0.8rem;
+    margin: 8px 0 4px 0;
+}
+
+.login__container__input {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.senha {
+    align-self: flex-end;
+    font-size: 0.75rem;
+    color: #555;
+    margin: -5px 0 10px 0;
+    text-decoration: none;
+}
+
+.login__container__button {
+    width: 100%;
+    padding: 12px;
+    background-color: #FA6971;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.red-text {
+    color: red;
+    font-weight: 500;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 20px;
+}
+
+.trem {
+    width: 90%;
+    height: auto;
+    margin-left: 10%;
+}
+
+/* Media Queries para diferentes tamanhos de tela */
+@media screen and (max-height: 700px) {
+    .login {
+        padding: 10px 0;
     }
     
-        
-}
-@media screen and (max-width: 390px){
-    body {
-        display: flex;
-        flex-direction: column;
-        font-family: 'Roboto', sans-serif;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        width: 100vw;
-        background: linear-gradient(to top, red, white 80%);
-        overflow: hidden !important;
-
-    }
-    .ajustes {
-        display: flex;
-        align-items: center;
-        justify-content: right;
-        height: 10%;
-        width: 100%;
-        padding-right: 2vh;
-        padding-top: 2vh;
-    }
-    section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 65%;
-        width: 100%;
-    }
-    .login{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 90%;
-        width: 95%;
-        background-color: #E7E3E3;
-        flex-direction: column;
-        border-radius: 0.5vh;
-    }
-    .cptm{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 24%;
-        width: 27%;
-        background-color: #E7E3E3;
-        margin-top: 3%;
-    }
-    .login__container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 100%;
-        width: 100%;
-        padding-top: 10%;
-    }
-    .login__container__title{
-        font-family: 'Roboto', sans-serif;
-        font-weight: 450;
-        margin-top: -10%;
-    }
-    .login__container__title2{
-        font-family: 'Roboto', sans-serif;
-        font-weight: 450;
-        margin-top: -4%;
-        padding-bottom: 10%;
-    }
-    .login__container__input{
-        display: flex;
-        flex-direction: column;
-        margin-top: -7%;
-        width: 190%;
-        margin-left: -46%;
-        height: 20%;
-        border: solid 2px #000000;
-    }
-    .mini-textos{
-        font-family: 'Roboto', sans-serif;
-        margin-left: -45%;
-        font-size: 0.8em;
-        font-weight: 450;
-    }
-    .senha{
-        font-family: 'Roboto', sans-serif;
-        margin-left: -50%;
-        font-size: 0.8em;
-        font-weight: 450;
-        margin-left: 90%;
-        white-space: nowrap;
-    }
-    .login__container__button{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 5%; 
-        width: 180%;
-        background-color: #FA6971;
-        border: 0px;
-        margin-left: -40%;
-        height: 20%;
-        font-family: 'Roboto', sans-serif;
-        font-size: 0.8em;
-        font-weight: 450;
-        border-radius: 0.2vh;
-
-    }
-    .red-text {
-        color: red;
-    }
-    footer{
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        height: 25%;
-        width: 100%;
-        overflow: hidden;
-
-    }
-    .trem{
-        margin-left: 10%;
-        height: 100%;
-        overflow: hidden;
-    }
-    html, body {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        height: 100%;
-        overflow: hidden; /* Garante que não haja barras de rolagem */
+    .login__container__title {
+        font-size: 1.1rem;
     }
     
+    .login__container__title2 {
+        font-size: 0.8rem;
+        margin-bottom: 15px;
+    }
+    
+    .login__container__input {
+        padding: 8px;
+        margin-bottom: 8px;
+    }
+    
+    .login__container__button {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .login {
+        width: 95%;
+    }
+    
+    .login__container {
+        width: 90%;
+    }
+    
+    .login__container__title {
+        font-size: 1rem;
+    }
+    
+    .login__container__title2 {
+        font-size: 0.75rem;
+    }
+    
+    .mini-textos {
+        font-size: 0.7rem;
+    }
+    
+    .senha {
+        font-size: 0.65rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .login {
+        max-width: 450px;
+        padding: 30px 0;
+    }
+    
+    .login__container__title {
+        font-size: 1.5rem;
+    }
+    
+    .login__container__title2 {
+        font-size: 1.1rem;
+    }
+    
+    .login__container__input {
+        padding: 12px;
+        font-size: 1rem;
+    }
+    
+    .login__container__button {
+        padding: 14px;
+        font-size: 1rem;
+    }
+    
+    .mini-textos, .senha {
+        font-size: 0.9rem;
+    }
 }
