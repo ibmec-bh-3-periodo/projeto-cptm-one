@@ -32,17 +32,7 @@ body {
         height: 14%;
         color: #fff;
     }
-    .settings {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-    }
-    .settings img {
-        height: 58px;
-        width: 58px;
-    }
-
+    
     .logo {
         display: flex;
         justify-content: center;
@@ -118,7 +108,7 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 58%;
+        height: 59%;
         background-color: #d3ccccf3;
         width: 100%;
         border-radius: 10px;
@@ -267,9 +257,6 @@ body {
         width: 20%;
         border-radius: 20px;
         background-color: #FF0000;
-        color: white;
-        font-size: 1.5rem;
-        font-weight: bold;
         border-radius: 30px !important;
         border: none;
     }
