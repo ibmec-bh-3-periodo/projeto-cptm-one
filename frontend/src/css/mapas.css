@@ -1,0 +1,119 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.tudo{
+    display: flex;
+    height: 93%;
+    flex-direction: column;
+    background-color: grey;
+    
+}
+#map {
+    display: flex;
+    margin-bottom: -100px;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+.pagina {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c9c1c1;
+    width: 100%;
+    height: 18%;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    z-index: 2;
+}
+.form{
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+    width: 35vh;
+    height: 19vh;
+    border-radius: 40px;
+    margin-bottom: 200px;
+    top: 75%;
+    z-index: 3;
+
+}
+.pagina input[type="text"] {
+    width: 88%;
+    height: 4vh;
+    margin-bottom: 1vh;
+    margin-top: 1.3vh;
+    font-size: 1.5vh;
+    border-radius: 50px;
+    margin-left: 2vh;
+    padding-left: 30px;
+    text-align: left;
+}
+.pagina input[type="submit"] {
+    
+    height: 4vh;
+    width: 9vh; 
+    font-size: 1.5vh;
+    border-radius: 30px;
+    margin-left: 13vh;
+}
+
+
+.seta{
+    display: flex;
+    height: 7vh;
+    width: 7vh;
+    position: absolute;
+    top: 5%;
+    z-index: 2;
+    justify-content: left;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}	
+footer {
+    position: fixed ;
+    bottom: 0 ;
+    width: 100%;
+    height: 7%;
+    background-color: #FF0000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 3;
+} 
+footer{
+    position: fixed !important;
+    bottom: 0 !important;
+    width: 100%;
+    height: 7%;
+    background-color: #FF0000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}	
+footer div img {
+    height: 60%;
+}
+footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+}
