@@ -10,7 +10,7 @@ body {
     flex-direction: column;
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 431px) {
     * {
         margin: 0;
         padding: 0;
