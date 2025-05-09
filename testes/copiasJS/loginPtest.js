@@ -1,5 +1,5 @@
 document.getElementById('signupForm').addEventListener('submit', function(event) {
-    event.preventDefault();  // Impede o envio do formulário até a validação ser realizada
+    event.preventDefault();  
     
     const emailInput = document.getElementById('email').value;
     const senhaInput = document.getElementById('senha').value;
@@ -20,7 +20,7 @@ document.getElementById('signupForm').addEventListener('submit', function(event)
 });
 
 function validateEmail(email) {
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;  // Padrão básico para validação de e-mail
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;  
 
     if (!emailPattern.test(email) && email!="") {
         throw new Error('O e-mail digitado não é válido. Por favor, insira um e-mail correto.');
