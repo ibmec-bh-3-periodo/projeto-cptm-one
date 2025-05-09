@@ -34,3 +34,5 @@ function validateSenha(senha){
         throw new Error("Digite sua senha!")
     }
 }
+
+Module.exports = {validateEmail,validateSenha};
