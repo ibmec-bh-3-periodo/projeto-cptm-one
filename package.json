@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "build": "npx tsc",
-    "dev": "ts-node src/server/app.ts && build"
+    "dev": "npx tsc && ts-node src/server/app.ts"
   },
   "repository": {
     "type": "git",
@@ -20,6 +19,7 @@
   },
   "homepage": "https://github.com/ibmec-bh-3-periodo/projeto-cptm-one#readme",
   "devDependencies": {
+    "@types/entities": "^1.1.1",
     "@types/express": "^5.0.1",
     "@types/node": "^22.15.17",
     "jest-environment-jsdom": "^29.7.0",
