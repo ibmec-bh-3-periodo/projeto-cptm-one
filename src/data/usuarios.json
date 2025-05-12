@@ -47,26 +47,5 @@
     "email": "teste@gmail.com",
     "senha": "Buccini2006",
     "telefone": "31121212121"
-  },
-  {
-    "nome": "LUCAS",
-    "sobrenome": "BUCCINI",
-    "email": "202401005185@alunos.ibmec.edu.br",
-    "senha": "12345678",
-    "telefone": "31983472636"
-  },
-  {
-    "nome": "teste",
-    "sobrenome": "teste",
-    "email": "teste@teste.com",
-    "senha": "12345678",
-    "telefone": "31983472636"
-  },
-  {
-    "nome": "LUCAS",
-    "sobrenome": "BUCCINI",
-    "email": "a@x.com",
-    "senha": "123456",
-    "telefone": "31984848383"
   }
 ]

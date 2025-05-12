@@ -1,5 +1,5 @@
-document.getElementById('signupForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Impede envio automático
+document.getElementById('signupForm').addEventListener('submit', async function(event) {
+    event.preventDefault(); // Impede envio automático do formulário
 
     // Coleta os valores dos inputs
     const nome = document.querySelector('input[name="nome"]').value.trim();
@@ -16,50 +16,46 @@ document.getElementById('signupForm').addEventListener('submit', function(event)
         validateSenha(senha);
         validateTelefone(telefone);
 
-        // Envia para a API
-        fetch("http://localhost:3000/login/cadastro", {
+        // Envia os dados para a API
+        const response = await fetch("http://localhost:3000/login/cadastro", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({ nome, sobrenome, email, senha, telefone })
-        })
-        .then(response => response.json())
-        .then(data => {
-            console.log(data); // Para depuração
-            if (data.success) {
-                alert(data.message); // Exibe sucesso
-                window.location.href = "frontend/src/pages/home.html";
-            } else {
-                alert(data.message); // Erro da API (ex: e-mail já cadastrado)
-            }
-        })
-        .catch(error => {
-            console.error("Erro:", error);
-            alert("Erro ao cadastrar. Tente novamente mais tarde.");
         });
 
+        const data = await response.json();
+        console.log(data); // Para depuração
+
+        if (data.success) {
+            alert(data.message); // Exibe mensagem de sucesso
+            window.location.href = "../../../index.html"; // Redireciona para a página de login (ajuste o caminho conforme sua estrutura real)
+        } else {
+            alert(data.message); // Mostra erro retornado da API
+        }
+
     } catch (error) {
-        alert("Erro: " + error.message);
+        console.error("Erro:", error);
+        alert("Erro ao cadastrar. Tente novamente mais tarde.");
     }
 });
 
-// Funções de validação
 function validateNome(nome) {
-    if (nome === "") throw new Error("Digite seu nome!");
+    if (!nome) throw new Error("Digite seu nome!");
 }
 
 function validateSobrenome(sobrenome) {
-    if (sobrenome === "") throw new Error("Digite seu sobrenome!");
+    if (!sobrenome) throw new Error("Digite seu sobrenome!");
 }
 
 function validateEmail(email) {
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailPattern.test(email)) throw new Error("Digite um email válido!");
+    if (!emailPattern.test(email)) throw new Error("Digite um e-mail válido!");
 }
 
 function validateSenha(senha) {
-    if (senha.length < 6) throw new Error("A senha deve ter pelo menos 6 caracteres!");
+    if (!senha || senha.length < 6) throw new Error("A senha deve ter pelo menos 6 caracteres!");
 }
 
 function validateTelefone(telefone) {
