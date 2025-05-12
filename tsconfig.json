@@ -1,11 +1,13 @@
 {
   "compilerOptions": {
     "target": "ES6",
-    "module": "commonjs",
-    "rootDir": "./src/server",
+    "module": "Node16",
+    "moduleResolution": "node16", 
+    "rootDir": "./src",
     "outDir": "./build",
     "strict": true,
     "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true
   }
 }

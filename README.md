@@ -59,18 +59,22 @@ Este projeto utiliza as seguintes tecnologias e ferramentas:
 
 - **/frontend**: Contém todas os codigos feitos no frontend
   - **/src**: Contém o código fonte do projeto.
-    - **/content**: Arquivos HTML.
+    - **/pages**: Arquivos HTML.
     - **/css**: Folhas de estilo CSS.
     - **/js**: Arquivos JS.
     - **/img**: Imagens.
-    - **/testes**: Arquivos de teste.
+    
 
-- **/backend**: Contém os odigos relacionados ao backend
-  - **/src**: Contém o código fonte do projeto.
-    - **/services**: Aqui é a pasta onde vai ficar as funções criadas, em ts.
-    - **app.ts**: Arquivo principal da nosa api, que fará o acesso com base nas funções utilizadas
-    - **/build**: Arquivos JS compilados, a partir do ts.
-    - **/data**: Pasta onde vão ficar os bancos de dados.
+- **/src**: Contém o código fonte do projeto.
+  - **/services**: Aqui é a pasta onde vai ficar as funções criadas, em ts.
+  - **app.ts**: Arquivo principal da nosa api, que fará o acesso com base nas funções utilizadas
+  - **/data**: Pasta onde vão ficar os bancos de dados.
+
+- **/testes**: Arquivos de teste.
+  - **/copiaJS**: pasta onde fica a copia dos arquivos que serão testados
+  - **/testeJS**: pasta onde fica os arquivos de teste
+
+
 - **package.json**
 - **package-lock.json**
 - **README.md**
