@@ -1,5 +1,5 @@
 // teste do funcionamento da senha 
-const { validateSenha } = require('./caminho/para/seuarquivo'); 
+const { validateSenha } = require('../copiasJS/validateSenha'); 
 
 describe('Função validateSenha', () => {
   test('deve lançar erro se a senha estiver vazia', () => {

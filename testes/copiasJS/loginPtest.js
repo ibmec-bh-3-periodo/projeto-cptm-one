@@ -35,4 +35,4 @@ function validateSenha(senha){
     }
 }
 
-Module.exports = {validateEmail,validateSenha};
+module.exports = {validateEmail,validateSenha};
