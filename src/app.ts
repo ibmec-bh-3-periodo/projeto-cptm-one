@@ -33,20 +33,33 @@ app.post('/login/verificacao', (req, res)=> {
 
 app.post('/login/cadastro', (req, res) => {
     const { nome, email, senha, sobrenome, telefone } = req.body;
-    const usuarioExistente = data.find((user) => user.email === email);
-    if(!usuarioExistente) {
-        const novoUsuario = { nome, sobrenome, email, senha, telefone };
-        fs.writeFile(dataFilePath, JSON.stringify([...data, novoUsuario], null, 2), (err) => {
-            if (err) {
-                console.error('Erro ao salvar o arquivo:', err);
-                return res.status(500).json({ success: false, message: 'Erro ao cadastrar usuário' });
-            }
-            res.status(201).json({ success: true, message: 'Usuário cadastrado com sucesso' });
-        });
-    }
-    else {
-        res.status(409).json({ success: false, message: 'Email já cadastrado' });
-    }
+
+    // Leia o arquivo atualizado
+    fs.readFile(dataFilePath, 'utf8', (err, fileData) => {
+        if (err) {
+            console.error('Erro ao ler o arquivo:', err);
+            return res.status(500).json({ success: false, message: 'Erro ao processar cadastro' });
+        }
+
+        const usuarios = JSON.parse(fileData); // Parse dos dados do arquivo
+        const usuarioExistente = usuarios.find((user: any) => user.email === email);
+
+        if (!usuarioExistente) {
+            const novoUsuario = { nome, sobrenome, email, senha, telefone };
+            const novosDados = [...usuarios, novoUsuario]; // Adiciona o novo usuário
+
+            // Escreve os dados atualizados no arquivo
+            fs.writeFile(dataFilePath, JSON.stringify(novosDados, null, 2), (err) => {
+                if (err) {
+                    console.error('Erro ao salvar o arquivo:', err);
+                    return res.status(500).json({ success: false, message: 'Erro ao cadastrar usuário' });
+                }
+                res.status(201).json({ success: true, message: 'Usuário cadastrado com sucesso' });
+            });
+        } else {
+            res.status(409).json({ success: false, message: 'Email já cadastrado' });
+        }
+    });
 });
 app.listen(3000, () => {
     console.log('Server is running on port 3000');

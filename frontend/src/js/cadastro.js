@@ -26,6 +26,7 @@ document.getElementById('signupForm').addEventListener('submit', function(event)
         })
         .then(response => response.json())
         .then(data => {
+            console.log(data); // Para depuração
             if (data.success) {
                 alert(data.message); // Exibe sucesso
                 window.location.href = "frontend/src/pages/home.html";
