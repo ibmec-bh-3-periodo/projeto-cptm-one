@@ -1,23 +1,37 @@
 [
-    {
-      "nome": "Lucas Buccini",
-      "email": "lucasmbuccini@gmail.com",
-      "senha": "Buccini2006"
-    },
-    {
-      "nome": "Marcello",
-      "email": "marcellofbbr@gmail.com",
-      "senha": "marcello2705"
-    },
-    {
-      "nome": "Mateus",
-      "email": "mateusmilanezdepaula@gmail.com",
-      "senha": "mateus12321"
-    },
-    {
-      "nome": "Lucas Tergileni",
-      "email": "lucastergi@gmail.com",
-      "senha": "12345678"
-    }
-  ]
-  
+  {
+    "nome": "Lucas",
+    "sobrenome": "Buccini",
+    "telefone": "11999999999",
+    "email": "lucasmbuccini@gmail.com",
+    "senha": "Buccini2006"
+  },
+  {
+    "nome": "Marcello",
+    "sobrenome": "Rocha",
+    "telefone": "11999999999",
+    "email": "marcellofbbr@gmail.com",
+    "senha": "marcello2705"
+  },
+  {
+    "nome": "Mateus",
+    "sobrenome": "Milanez",
+    "telefone": "11999999999",
+    "email": "mateusmilanezdepaula@gmail.com",
+    "senha": "mateus12321"
+  },
+  {
+    "nome": "Lucas",
+    "sobrenome": "Tergileni",
+    "telefone": "11999999999",
+    "email": "lucastergi@gmail.com",
+    "senha": "12345678"
+  },
+  {
+    "nome": "Lucas",
+    "sobrenome": "Mendes",
+    "email": "lucasmendesbuccini1@outlook.com",
+    "senha": "Buccini2006",
+    "telefone": "31983472636"
+  }
+]
