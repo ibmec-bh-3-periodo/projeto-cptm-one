@@ -117,5 +117,12 @@
     "email": "tst@tst.co",
     "senha": "Buccini2006",
     "telefone": "31999999999"
+  },
+  {
+    "nome": "Marcello",
+    "sobrenome": "Teste",
+    "email": "marcello@marcello.com",
+    "senha": "12345678",
+    "telefone": "31999999999"
   }
 ]
