@@ -122,50 +122,49 @@ CRITÉRIOS DE ENTREGA
 -banco de dados de usuarios e ter a verificação
 
 
-## 🔄 Daily Stand-up
+##  7. Daily's
 
-### 📅 Data: `DD/MM/AAAA`
+### 📅 Data: `09/05/2025`
 
 ---
 
 ### 👤 Mateus
 - ✅ O que fiz ontem:
-  - ...
+  - reajustei pagina de login.
 - 🚧 O que vou fazer hoje:
-  - ...
+  - iniciar teste pagina de perfil.
 - ⚠️ Impedimentos:
-  - ...
+  - nenhum.
 
 ---
 
 ### 👤 Marcelo
 - ✅ O que fiz ontem:
-  - ...
+  - rotulei tipos de branch, commits, pastas.
 - 🚧 O que vou fazer hoje:
-  - ...
+  - inciar teste de senhas.
 - ⚠️ Impedimentos:
-  - ...
+  - nenhum.
 
 ---
 
 ### 👤 Lucas B
 - ✅ O que fiz ontem:
-  - ...
+  - reorganizai as pastas.
 - 🚧 O que vou fazer hoje:
-  - ...
+  - iniciar API de cadastros dos usuarios.
 - ⚠️ Impedimentos:
-  - ...
+  - nenhum.
 
 ---
 
 ### 👤 Lucas T
 - ✅ O que fiz ontem:
-  - ...
+  - reajustei pagina de pagamento.
 - 🚧 O que vou fazer hoje:
-  - ...
+  - inciar teste de verificação email.
 - ⚠️ Impedimentos:
-  - ...
+  - nenhum.
 
 ---
 
-> ✍️ Atualize diariamente antes da reunião ou início do dia.
