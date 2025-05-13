@@ -120,3 +120,52 @@ CRITÉRIOS DE ENTREGA
 
 -funcionar em outros dispositivos.
 -banco de dados de usuarios e ter a verificação
+
+
+## 🔄 Daily Stand-up
+
+### 📅 Data: `DD/MM/AAAA`
+
+---
+
+### 👤 Mateus
+- ✅ O que fiz ontem:
+  - ...
+- 🚧 O que vou fazer hoje:
+  - ...
+- ⚠️ Impedimentos:
+  - ...
+
+---
+
+### 👤 Marcelo
+- ✅ O que fiz ontem:
+  - ...
+- 🚧 O que vou fazer hoje:
+  - ...
+- ⚠️ Impedimentos:
+  - ...
+
+---
+
+### 👤 Lucas B
+- ✅ O que fiz ontem:
+  - ...
+- 🚧 O que vou fazer hoje:
+  - ...
+- ⚠️ Impedimentos:
+  - ...
+
+---
+
+### 👤 Lucas T
+- ✅ O que fiz ontem:
+  - ...
+- 🚧 O que vou fazer hoje:
+  - ...
+- ⚠️ Impedimentos:
+  - ...
+
+---
+
+> ✍️ Atualize diariamente antes da reunião ou início do dia.
