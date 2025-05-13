@@ -45,3 +45,5 @@ imageUpload.addEventListener("change", (event) => {
 nomeInput.addEventListener("input", saveProfileData);
 emailInput.addEventListener("input", saveProfileData);
 telefoneInput.addEventListener("input", saveProfileData);
+
+module.exports = { saveProfileData };
