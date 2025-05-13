@@ -17,19 +17,26 @@ app.use(express.json());
 app.use(bodyParser.json());
 app.use(cors());
 
-app.post('/login/verificacao', (req, res)=> {
-
+app.post('/login/verificacao', (req, res) => {
     const { email, senha } = req.body;
 
-    const usuarioEncontrado = data.find((user) => user.email === email && user.senha === senha);
+    // Leia o arquivo atualizado
+    fs.readFile(dataFilePath, 'utf8', (err, fileData) => {
+        if (err) {
+            console.error('Erro ao ler o arquivo:', err);
+            return res.status(500).json({ success: false, message: 'Erro ao processar login' });
+        }
 
-    if (usuarioEncontrado) {
-        res.status(200).json({ success: true,  message: 'Login bem-sucedido' });
-    } else {
-        res.status(401).json({ success: false, message: 'Email ou senha inválidos' });
-    }
+        const usuarios = JSON.parse(fileData); // Parse dos dados do arquivo
+        const usuarioEncontrado = usuarios.find((user: any) => user.email === email && user.senha === senha);
 
-})
+        if (usuarioEncontrado) {
+            res.status(200).json({ success: true, message: 'Login bem-sucedido' });
+        } else {
+            res.status(401).json({ success: false, message: 'Email ou senha inválidos' });
+        }
+    });
+});
 
 app.post('/login/cadastro', (req, res) => {
     const { nome, email, senha, sobrenome, telefone } = req.body;

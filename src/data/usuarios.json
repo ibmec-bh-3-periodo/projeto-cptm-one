@@ -47,5 +47,75 @@
     "email": "teste@gmail.com",
     "senha": "Buccini2006",
     "telefone": "31121212121"
+  },
+  {
+    "nome": "Lucas",
+    "sobrenome": "Buccini",
+    "email": "asasas@sasasas.com",
+    "senha": "12345678",
+    "telefone": "31999999999"
+  },
+  {
+    "nome": "teste",
+    "sobrenome": "teste",
+    "email": "teste@ag.com",
+    "senha": "12345678",
+    "telefone": "12345678900"
+  },
+  {
+    "nome": "lalal",
+    "sobrenome": "lalalal",
+    "email": "lala@lalla.com",
+    "senha": "12345678",
+    "telefone": "31999999999"
+  },
+  {
+    "nome": "lalal",
+    "sobrenome": "lalalal",
+    "email": "lala@lall.com",
+    "senha": "2131234556",
+    "telefone": "31999999999"
+  },
+  {
+    "nome": "lalal",
+    "sobrenome": "lalalal",
+    "email": "lala@lll.com",
+    "senha": "asasasasassa",
+    "telefone": "31999999999"
+  },
+  {
+    "nome": "lalal",
+    "sobrenome": "lalalal",
+    "email": "lala@ll.com",
+    "senha": "asasasasassasa",
+    "telefone": "31999999999"
+  },
+  {
+    "nome": "lalal",
+    "sobrenome": "lalalal",
+    "email": "lala@l.com",
+    "senha": "12345678",
+    "telefone": "31999999999"
+  },
+  {
+    "nome": "tetst",
+    "sobrenome": "tst",
+    "email": "tst@tst.com",
+    "senha": "12345678",
+    "telefone": "31999999999"
+  },
+  {
+    "nome": "Mateus",
+    "sobrenome": "De Paula",
+    "email": "teste8@gmail.com",
+    "senha": "teteulindo",
+    "telefone": "31999999999"
+  },
+  {
+    "nome": "Lucas",
+    "sobrenome": "Teste",
+    "email": "tst@tst.co",
+    "senha": "Buccini2006",
+    "telefone": "31999999999"
   }
 ]

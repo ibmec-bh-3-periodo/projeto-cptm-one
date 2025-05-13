@@ -29,8 +29,9 @@ document.getElementById('signupForm').addEventListener('submit', async function(
         console.log(data); // Para depuração
 
         if (data.success) {
+            window.location.href = "../../../index.html";
             alert(data.message); // Exibe mensagem de sucesso
-            window.location.href = "../../../index.html"; // Redireciona para a página de login (ajuste o caminho conforme sua estrutura real)
+             // Redireciona para a página de login (ajuste o caminho conforme sua estrutura real)
         } else {
             alert(data.message); // Mostra erro retornado da API
         }
