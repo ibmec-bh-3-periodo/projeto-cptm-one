@@ -79,7 +79,8 @@ Este projeto utiliza as seguintes tecnologias e ferramentas:
 - **package-lock.json**
 - **README.md**
 - **tsconfig.json**
-- **Retrospectiva**
+- **Retrospectiva.md**
+- **Abertura_sprint.md**
 
 
 ### 5. Requisitos Funcionais(backlog)
