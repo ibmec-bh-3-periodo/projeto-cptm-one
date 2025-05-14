@@ -101,7 +101,7 @@ Endpoint:GET
 
 -Descrição:
 
--Parametro:
+-Parâmetros:
 
 | Campo  | Tipo   | Obrigatório | Descrição              |
 |--------|--------|-------------|------------------------|
@@ -131,7 +131,7 @@ Endpoint: POST
 
 -Descrição:
 
--Parametro:
+-Parâmetros:
 | Campo     | Tipo   | Obrigatório | Descrição                     |
 |-----------|--------|-------------|-------------------------------|
 | nome      | string | Sim         | Nome do usuário               |
