@@ -168,3 +168,48 @@ CRITÉRIOS DE ENTREGA
 
 ---
 
+### 📅 Data: `11/05/2025`
+
+---
+
+### 👤 Mateus
+- ✅ O que fiz ontem:
+  - teste pagina perfil e terminei de reajustar pagiina home
+- 🚧 O que vou fazer hoje:
+  - arrumar readme, aumentar teste de perfil
+- ⚠️ Impedimentos:
+  - nenhum.
+
+---
+
+### 👤 Marcelo
+- ✅ O que fiz ontem:
+  - teste de senhas
+- 🚧 O que vou fazer hoje:
+  - arrumar conflito do merge
+- ⚠️ Impedimentos:
+  - nenhum.
+
+---
+
+### 👤 Lucas B
+- ✅ O que fiz ontem:
+  - fiz API de cadastro e login
+- 🚧 O que vou fazer hoje:
+  - teste do carrossel
+- ⚠️ Impedimentos:
+  - nenhum.
+
+---
+
+### 👤 Lucas T
+- ✅ O que fiz ontem:
+  - teste de verificação de email
+- 🚧 O que vou fazer hoje:
+  - ---
+- ⚠️ Impedimentos:
+  - nenhum.
+
+---
+
+
