@@ -95,20 +95,20 @@ Este projeto utiliza as seguintes tecnologias e ferramentas:
 
 ### 6. documentação API
 
-###Base URL:(ESSE É DE LOGIN)
+-Base URL:
 https://api.exemplo.com/v1
 Endpoint:GET
 
-###Descrição:
+-Descrição:
 
-###Parametro:
+-Parametro:
 
 | Campo  | Tipo   | Obrigatório | Descrição              |
 |--------|--------|-------------|------------------------|
 | email  | string | Sim         | Email do usuário       |
 | senha  | string | Sim         | Senha do usuário       |
 
-###Erros: 
+-Erros: 
 
 | Código | Tipo de Erro           | Descrição                                     |
 |--------|------------------------|-----------------------------------------------|
@@ -125,13 +125,13 @@ Endpoint:GET
 
 ---------------
 
-###Base URL:(ESSE É DE CADASTRO)
+-Base URL:(ESSE É DE CADASTRO)
 https://api.exemplo.com/v1
 Endpoint: POST
 
-###Descrição:
+-Descrição:
 
-##Parametro:
+-Parametro:
 | Campo     | Tipo   | Obrigatório | Descrição                     |
 |-----------|--------|-------------|-------------------------------|
 | nome      | string | Sim         | Nome do usuário               |
@@ -140,7 +140,7 @@ Endpoint: POST
 | senha     | string | Sim         | Senha do usuário              |
 | telefone  | string | Não         | Telefone para contato         |
 
-###Erros: 
+-Erros: 
 
 | Código | Tipo de Erro           | Descrição                                     |
 |--------|------------------------|-----------------------------------------------|
