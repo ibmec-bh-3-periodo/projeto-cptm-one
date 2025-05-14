@@ -8,11 +8,11 @@
 ## 👥 Distribuição de Tarefas
 | Integrante          | Tarefa                                     | Prazo         |
 |---------------------|--------------------------------------------|---------------|
-| Mateus              | Suporte para outros dispositivos           | DD/MM/AAAA    |
-| Lucas Tergilene     | Suporte para outros dispositivos           | DD/MM/AAAA    |
-| Lucas Buccini       | Organização de pastas/Cadastro de usuarios | DD/MM/AAAA    |
-| Marcello            | Cadastro de usuário                        | DD/MM/AAAA    |
-
+| Mateus              | Suporte para outros dispositivos           | 11/05/2025    |
+| Lucas Tergilene     | Suporte para outros dispositivos           | 11/05/2025    |
+| Lucas Buccini       | Organização de pastas/Cadastro de usuarios | 14/05/2025    |
+| Marcello            | Cadastro de usuário                        | 14/05/2025    |
+** O restante do tempo até o final da Sprint será direcionado a testes unitários e organização das documentações
 ## 🛠️ Ferramentas e Tecnologias Previstas
 - TypeScript (cadastro)
 - HTML/CSS (responsividade)
