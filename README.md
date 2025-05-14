@@ -93,7 +93,7 @@ Este projeto utiliza as seguintes tecnologias e ferramentas:
 6. **Histórico de uso de tickets e pagamentos feitos** Historico de uso e transferencia (dinheiro e passagens)
 
 
-### 6. documentação API
+### 6. Documentação API
 
 -Base URL:
 https://api.exemplo.com/v1
