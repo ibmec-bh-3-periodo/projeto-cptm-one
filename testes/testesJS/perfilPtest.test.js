@@ -1,7 +1,7 @@
 
 const { saveProfileData } = require('../copiasJS/perfilPtest.js');
 
-describe('saveProfileData teste', () => {
+describe('(função saveProfileData), teste se os dados estão sendo salvos', () => {
     beforeEach(() => {
       // simulação
       document.body.innerHTML = `
@@ -15,7 +15,7 @@ describe('saveProfileData teste', () => {
       localStorage.clear();
     });
   
-    test('salva os dados no localStorage corretamente', () => {
+    test('salva os dados no localStorage corretamente, deixando visual ao usuário', () => {
       saveProfileData();
   
       expect(localStorage.getItem("nome")).toBe("Mateus");
