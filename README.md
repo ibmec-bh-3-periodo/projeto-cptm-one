@@ -92,35 +92,64 @@ Este projeto utiliza as seguintes tecnologias e ferramentas:
 5. **Visualização do histórico** Visualização do historico de compras.
 6. **Histórico de uso de tickets e pagamentos feitos** Historico de uso e transferencia (dinheiro e passagens)
 ---
-### 6. Abertura de sprint
-----------///-----------
-Abertura de Sprint 1
-----------///-----------
+### 6. documentação API
+
+Base URL:(ESSE É DE LOGIN)
+https://api.exemplo.com/v1
+Endpoint:GET
+
+##Descrição:
+
+##Parametro:
+
+| Campo  | Tipo   | Obrigatório | Descrição              |
+|--------|--------|-------------|------------------------|
+| email  | string | Sim         | Email do usuário       |
+| senha  | string | Sim         | Senha do usuário       |
+
+##Erros: 
+
+| Código | Tipo de Erro           | Descrição                                     |
+|--------|------------------------|-----------------------------------------------|
+| 400    | Bad Request            | Requisição malformada ou dados inválidos      |
+| 401    | Unauthorized           | Token ausente ou inválido                     |
+| 403    | Forbidden              | Acesso não permitido                          |
+| 404    | Not Found              | Recurso não encontrado                        |
+| 409    | Conflict               | Conflito de dados (ex: email já cadastrado)   |
+| 422    | Unprocessable Entity   | Erro de validação nos campos                  |
+| 500    | Internal Server Error  | Erro inesperado no servidor                   |
 
 
-OBJETIVOS
-
--Organizaão de pastas.
--Suporte de dispositivo.
--Cadastro de usuario.
-
-DIVISÃO 
-
-Mateus - Suporte para outros dispositivos.
-Lucas tergilene - Suporte para outros dispositivos.
-Lucas Buccini - Organização de pastas e Cadastro de usuario.
-Marcello - Cadastro de usuarios.
-
-FERRAMENTAS/TECNOLOGIAS
-
-TypeScripts - cadastro.
-HTML/CSS - responsividade.
 
 
-CRITÉRIOS DE ENTREGA
+---------------
 
--funcionar em outros dispositivos.
--banco de dados de usuarios e ter a verificação
+Base URL:(ESSE É DE CADASTRO)
+https://api.exemplo.com/v1
+Endpoint: POST
+
+##Descrição:
+
+##Parametro:
+| Campo     | Tipo   | Obrigatório | Descrição                     |
+|-----------|--------|-------------|-------------------------------|
+| nome      | string | Sim         | Nome do usuário               |
+| sobrenome | string | Sim         | Sobrenome do usuário          |
+| email     | string | Sim         | Email do usuário              |
+| senha     | string | Sim         | Senha do usuário              |
+| telefone  | string | Não         | Telefone para contato         |
+
+##Erros: 
+
+| Código | Tipo de Erro           | Descrição                                     |
+|--------|------------------------|-----------------------------------------------|
+| 400    | Bad Request            | Requisição malformada ou dados inválidos      |
+| 401    | Unauthorized           | Token ausente ou inválido                     |
+| 403    | Forbidden              | Acesso não permitido                          |
+| 404    | Not Found              | Recurso não encontrado                        |
+| 409    | Conflict               | Conflito de dados (ex: email já cadastrado)   |
+| 422    | Unprocessable Entity   | Erro de validação nos campos                  |
+| 500    | Internal Server Error  | Erro inesperado no servidor                   |
 
 
 ##  7. Daily's
