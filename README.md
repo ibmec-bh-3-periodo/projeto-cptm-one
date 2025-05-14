@@ -95,14 +95,17 @@ Este projeto utiliza as seguintes tecnologias e ferramentas:
 
 ### 6. Documentação API
 
--Base URL:
-https://api.exemplo.com/v1
-Endpoint:GET
+-Base URL de Login:
+https://api.exemplo.com/login/verificacao  
+Endpoint:POST (Precisa de um envio de body, para comparar o cadastro e fazer autenticação, alem de proteger os dados do usuario)
 
 -Descrição:
+Faz a verificação de usuarios, com base na existência na base de dados
+Recebe os campos do formulario de login, pre configurados como body no js da pagina, nesse caso seria email e senha.
+Recebe também o banco de dados de usuarios, para fazer a comparação
+Retorna uma resposta em json, com o success, sendo true ou false e as mensagens pra cada condição
 
 -Parâmetros:
-
 | Campo  | Tipo   | Obrigatório | Descrição              |
 |--------|--------|-------------|------------------------|
 | email  | string | Sim         | Email do usuário       |
@@ -112,12 +115,9 @@ Endpoint:GET
 
 | Código | Tipo de Erro           | Descrição                                     |
 |--------|------------------------|-----------------------------------------------|
+| 200    | OK                     | Requisição bem-sucedida                       |
 | 400    | Bad Request            | Requisição malformada ou dados inválidos      |
-| 401    | Unauthorized           | Token ausente ou inválido                     |
-| 403    | Forbidden              | Acesso não permitido                          |
-| 404    | Not Found              | Recurso não encontrado                        |
-| 409    | Conflict               | Conflito de dados (ex: email já cadastrado)   |
-| 422    | Unprocessable Entity   | Erro de validação nos campos                  |
+| 401    | Unauthorized           | Email ou senha invalidos                      |
 | 500    | Internal Server Error  | Erro inesperado no servidor                   |
 
 
@@ -125,11 +125,14 @@ Endpoint:GET
 
 ---------------
 
--Base URL:(ESSE É DE CADASTRO)
-https://api.exemplo.com/v1
+-Base URL de cadastro:
+https://api.exemplo.com/login/cadastro
 Endpoint: POST
 
 -Descrição:
+Recebe os campos descritos abaixo em parametros, e faz a comparação se os dados são validos, e se o email já não está cadastrado.
+Caso as condições sejam atendidas, o endpoint retorna a mensagem de sucesso na rota 201, e faz a atualização do banco de dados, cadastrando o novo usuario.
+
 
 -Parâmetros:
 | Campo     | Tipo   | Obrigatório | Descrição                     |
@@ -144,12 +147,9 @@ Endpoint: POST
 
 | Código | Tipo de Erro           | Descrição                                     |
 |--------|------------------------|-----------------------------------------------|
+| 200    | OK                     | Requisição bem-sucedida                       |
 | 400    | Bad Request            | Requisição malformada ou dados inválidos      |
-| 401    | Unauthorized           | Token ausente ou inválido                     |
-| 403    | Forbidden              | Acesso não permitido                          |
-| 404    | Not Found              | Recurso não encontrado                        |
 | 409    | Conflict               | Conflito de dados (ex: email já cadastrado)   |
-| 422    | Unprocessable Entity   | Erro de validação nos campos                  |
 | 500    | Internal Server Error  | Erro inesperado no servidor                   |
 
 
