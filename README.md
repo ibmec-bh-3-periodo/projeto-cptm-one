@@ -91,23 +91,24 @@ Este projeto utiliza as seguintes tecnologias e ferramentas:
 4. **Ampla gama de compatibilidade** Visualização do programa em varios dispositivos ( diferentes modelos de celulares )
 5. **Visualização do histórico** Visualização do historico de compras.
 6. **Histórico de uso de tickets e pagamentos feitos** Historico de uso e transferencia (dinheiro e passagens)
----
+
+
 ### 6. documentação API
 
-Base URL:(ESSE É DE LOGIN)
+###Base URL:(ESSE É DE LOGIN)
 https://api.exemplo.com/v1
 Endpoint:GET
 
-##Descrição:
+###Descrição:
 
-##Parametro:
+###Parametro:
 
 | Campo  | Tipo   | Obrigatório | Descrição              |
 |--------|--------|-------------|------------------------|
 | email  | string | Sim         | Email do usuário       |
 | senha  | string | Sim         | Senha do usuário       |
 
-##Erros: 
+###Erros: 
 
 | Código | Tipo de Erro           | Descrição                                     |
 |--------|------------------------|-----------------------------------------------|
@@ -124,11 +125,11 @@ Endpoint:GET
 
 ---------------
 
-Base URL:(ESSE É DE CADASTRO)
+###Base URL:(ESSE É DE CADASTRO)
 https://api.exemplo.com/v1
 Endpoint: POST
 
-##Descrição:
+###Descrição:
 
 ##Parametro:
 | Campo     | Tipo   | Obrigatório | Descrição                     |
@@ -139,7 +140,7 @@ Endpoint: POST
 | senha     | string | Sim         | Senha do usuário              |
 | telefone  | string | Não         | Telefone para contato         |
 
-##Erros: 
+###Erros: 
 
 | Código | Tipo de Erro           | Descrição                                     |
 |--------|------------------------|-----------------------------------------------|
