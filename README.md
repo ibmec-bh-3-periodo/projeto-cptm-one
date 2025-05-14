@@ -207,7 +207,7 @@ CRITÉRIOS DE ENTREGA
 - ✅ O que fiz ontem:
   - teste de verificação de email
 - 🚧 O que vou fazer hoje:
-  - ---
+  - ?
 - ⚠️ Impedimentos:
   - nenhum.
 
