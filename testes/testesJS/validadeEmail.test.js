@@ -1,28 +1,28 @@
-const validadeEmail = require('../copiasJS/validateEmail');
+const {validateEmail} = require('../copiasJS/validateEmail');
 
-describe('validadeEmail', () => {
-    test('should return true for a valid email', () => {
-        const email = 'test@example.com';
-        expect(validadeEmail(email)).toBe(true);
+describe('validarEmail', () => {
+    test('deve retornar true para um email válido', () => {
+        const email = 'teste@exemplo.com';
+        expect(() => validateEmail(email)).not.toThrow();
     });
 
-    test('should return false for an invalid email', () => {
-        const email = 'invalid-email';
-        expect(validadeEmail(email)).toBe(false);
+    test('deve lançar um erro para um email inválido', () => {
+        const email = 'email-invalido';
+        expect(() => validateEmail(email)).toThrow('O e-mail digitado não é válido. Por favor, insira um e-mail correto.');
     });
 
-    test('should return false for an empty string', () => {
+    test('deve lançar um erro para uma string vazia', () => {
         const email = '';
-        expect(validadeEmail(email)).toBe(false);
+        expect(() => validateEmail(email)).toThrow('Digite seu email!');
     });
 
-    test('should return false for a null value', () => {
+    test('deve lançar um erro para um valor nulo', () => {
         const email = null;
-        expect(validadeEmail(email)).toBe(false);
+        expect(() => validateEmail(email)).toThrow('O e-mail digitado não é válido. Por favor, insira um e-mail correto.');
     });
 
-    test('should return false for an undefined value', () => {
+    test('deve lançar um erro para um valor indefinido', () => {
         const email = undefined;
-        expect(validadeEmail(email)).toBe(false);
+        expect(() => validateEmail(email)).toThrow('O e-mail digitado não é válido. Por favor, insira um e-mail correto.');
     });
 });
