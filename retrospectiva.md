@@ -23,3 +23,18 @@
 - Contribuições principais: Reorganização de pastas, fiz teste sobre a senha.
 - Dificuldade enfrentada: Dificuldade de entender corretamente como faria meu teste.
 - Nota para meu desempenho (0 a 10): 10
+
+- Nome: Mateus Milanez
+- Contribuições principais: Ajustar responsividade, teste da pagina perfil
+- Dificuldade enfrentada: lembrar como funciona css, fazer pela primeira vez um teste prático.
+- Nota para meu desempenho (0 a 10): 9
+
+- Nome: Lucas Buccini
+- Contribuições principais: Reorganização de pastas, fiz teste sobre o carrossel, API de cadastro e Login
+- Dificuldade enfrentada: 
+- Nota para meu desempenho (0 a 10):
+- 
+- Nome: Lucas tergilene
+- Contribuições principais: Reorganização de pastas, fiz teste sobre o email.
+- Dificuldade enfrentada:
+- Nota para meu desempenho (0 a 10): 
