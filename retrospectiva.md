@@ -6,8 +6,8 @@
 - Boa colaboração nas tarefas em grupo.
 
 ## 🚫 O que não deu certo?
-- comunicação de quais funções serão testadas e por quem
-- 
+- Comunicação pouco clara sobre quais funções seriam testadas e por quem;
+- Falta de definição de responsáveis em algumas etapas.
 
 ## 🛠️ O que podemos melhorar para a próxima sprint?
 - poder colocar mais itens no proximo sprint
