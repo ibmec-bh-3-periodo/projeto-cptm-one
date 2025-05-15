@@ -10,8 +10,9 @@
 - Falta de definição de responsáveis em algumas etapas.
 
 ## 🛠️ O que podemos melhorar para a próxima sprint?
-- poder colocar mais itens no proximo sprint
-- melhor comunicação
+- Incluir mais itens planejamento da próxima sprint;
+- Melhorar a comunicação entre os membros, principalmente sobre as tarefas e testes;
+- Documentar melhor o que está sendo feito por cada um.
 
 ## 🧠 Aprendizados da sprint
 - API na pratica
