@@ -1,8 +1,9 @@
 # 🔄 Retrospectiva da Sprint X
 
 ## ✅ O que deu certo?
-- proatividade 
-- ajuda disponibilizada por todos integrantes
+- Proatividade da equipe;
+- Ajuda disponibilizada por todos integrantes;
+- Boa colaboração nas tarefas em grupo.
 
 ## 🚫 O que não deu certo?
 - comunicação de quais funções serão testadas e por quem
