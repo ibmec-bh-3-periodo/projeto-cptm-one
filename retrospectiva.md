@@ -33,7 +33,7 @@
 - Contribuições principais: Reorganização de pastas, fiz teste sobre o carrossel, API de cadastro e Login
 - Dificuldade enfrentada: 
 - Nota para meu desempenho (0 a 10):
-- 
+  
 - Nome: Lucas tergilene
 - Contribuições principais: Reorganização de pastas, fiz teste sobre o email.
 - Dificuldade enfrentada:
