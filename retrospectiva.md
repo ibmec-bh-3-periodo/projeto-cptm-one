@@ -19,7 +19,7 @@
 - Importância da comunicação clara na equipe.
 
 ## 🙋 Avaliação individual (cada aluno preenche)
-- Nome:
-- Contribuições principais:
-- Dificuldade enfrentada:
-- Nota para meu desempenho (0 a 10):
+- Nome: Marcello Rocha
+- Contribuições principais: Reorganização de pastas, fiz teste sobre a senha.
+- Dificuldade enfrentada: Dificuldade de entender corretamente como faria meu teste.
+- Nota para meu desempenho (0 a 10): 10
