@@ -261,7 +261,7 @@ Caso as condições sejam atendidas, o endpoint retorna a mensagem de sucesso na
 - ✅ O que fiz ontem:
   - Arrumei o conflito
 - 🚧 O que vou fazer hoje:
-  - 
+  - melhorar documentação e verificar documentação de entrega
 - ⚠️ Impedimentos:
   - nenhum.
 
