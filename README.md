@@ -161,9 +161,9 @@ Caso as condições sejam atendidas, o endpoint retorna a mensagem de sucesso na
 
 ### 👤 Mateus
 - ✅ O que fiz ontem:
-  - reajustei pagina de login.
+  - Reajustei pagina de login.
 - 🚧 O que vou fazer hoje:
-  - iniciar teste pagina de perfil.
+  - Iniciar teste pagina de perfil.
 - ⚠️ Impedimentos:
   - nenhum.
 
@@ -171,9 +171,9 @@ Caso as condições sejam atendidas, o endpoint retorna a mensagem de sucesso na
 
 ### 👤 Marcelo
 - ✅ O que fiz ontem:
-  - rotulei tipos de branch, commits, pastas.
+  - Rotulei tipos de branch, commits, pastas.
 - 🚧 O que vou fazer hoje:
-  - inciar teste de senhas.
+  - Inciar teste de senhas.
 - ⚠️ Impedimentos:
   - nenhum.
 
@@ -181,9 +181,9 @@ Caso as condições sejam atendidas, o endpoint retorna a mensagem de sucesso na
 
 ### 👤 Lucas B
 - ✅ O que fiz ontem:
-  - reorganizai as pastas.
+  - Reorganizai as pastas.
 - 🚧 O que vou fazer hoje:
-  - iniciar API de cadastros dos usuarios.
+  - Iniciar API de cadastros dos usuarios.
 - ⚠️ Impedimentos:
   - nenhum.
 
@@ -191,9 +191,9 @@ Caso as condições sejam atendidas, o endpoint retorna a mensagem de sucesso na
 
 ### 👤 Lucas T
 - ✅ O que fiz ontem:
-  - reajustei pagina de pagamento.
+  - Reajustei pagina de pagamento.
 - 🚧 O que vou fazer hoje:
-  - inciar teste de verificação email.
+  - Inciar teste de verificação email.
 - ⚠️ Impedimentos:
   - nenhum.
 
@@ -205,9 +205,9 @@ Caso as condições sejam atendidas, o endpoint retorna a mensagem de sucesso na
 
 ### 👤 Mateus
 - ✅ O que fiz ontem:
-  - teste pagina perfil e terminei de reajustar pagiina home
+  - Teste pagina perfil e terminei de reajustar pagiina home
 - 🚧 O que vou fazer hoje:
-  - arrumar readme, aumentar teste de perfil
+  - Arrumar readme, aumentar teste de perfil
 - ⚠️ Impedimentos:
   - nenhum.
 
@@ -215,9 +215,9 @@ Caso as condições sejam atendidas, o endpoint retorna a mensagem de sucesso na
 
 ### 👤 Marcelo
 - ✅ O que fiz ontem:
-  - teste de senhas
+  - Teste de senhas
 - 🚧 O que vou fazer hoje:
-  - arrumar conflito do merge
+  - Arrumar conflito do merge
 - ⚠️ Impedimentos:
   - nenhum.
 
@@ -225,9 +225,9 @@ Caso as condições sejam atendidas, o endpoint retorna a mensagem de sucesso na
 
 ### 👤 Lucas B
 - ✅ O que fiz ontem:
-  - fiz API de cadastro e login
+  - Fiz API de cadastro e login
 - 🚧 O que vou fazer hoje:
-  - teste do carrossel
+  - Teste do carrossel
 - ⚠️ Impedimentos:
   - nenhum.
 
@@ -235,11 +235,55 @@ Caso as condições sejam atendidas, o endpoint retorna a mensagem de sucesso na
 
 ### 👤 Lucas T
 - ✅ O que fiz ontem:
-  - teste de verificação de email
+  - Teste de verificação de email
 - 🚧 O que vou fazer hoje:
-  - ?
+  - Apagar arquivos copias sem necessidade(otimização)
+- ⚠️ Impedimentos:
+  - informação dos integrantes, quais podem apagar
+
+---
+
+### 📅 Data: `12/05/2025`
+
+---
+
+### 👤 Mateus
+- ✅ O que fiz ontem:
+  - Teste de perfil aprimorada
+- 🚧 O que vou fazer hoje:
+  - Documentação e organização das funcinalidades
 - ⚠️ Impedimentos:
   - nenhum.
+
+---
+
+### 👤 Marcelo
+- ✅ O que fiz ontem:
+  - Arrumei o conflito
+- 🚧 O que vou fazer hoje:
+  - 
+- ⚠️ Impedimentos:
+  - nenhum.
+
+---
+
+### 👤 Lucas B
+- ✅ O que fiz ontem:
+  - Teste de carrossel 
+- 🚧 O que vou fazer hoje:
+  - 
+- ⚠️ Impedimentos:
+  - nenhum.
+
+---
+
+### 👤 Lucas T
+- ✅ O que fiz ontem:
+  - Apagar arquivos nao usados
+- 🚧 O que vou fazer hoje:
+  - 
+- ⚠️ Impedimentos:
+  - 
 
 ---
 
