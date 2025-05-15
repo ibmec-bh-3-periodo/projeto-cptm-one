@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="../css/cadastro.css" />
+</head>
+<body>
+    <header></header>
+    <section>
+        <div class="login">
+            <img class="cptm" src="../images/imglogin/cptm.png" alt="Logo da CPTM" />
+            <div class="login__container">
+                <p class="login__container__title">CRIE SUA CONTA</p>
+                <p class="login__container__title2">Movendo vidas, impulsionando destinos</p>
+                <form id="signupForm">
+                    <p class="mini-textos">Nome</p>
+                    <input type="text" name="nome" class="login__container__input" required />
+                    
+                    <p class="mini-textos">Sobrenome</p>
+                    <input type="text" name="sobrenome" class="login__container__input" required />
+                    
+                    <p class="mini-textos">Email</p>
+                    <input type="email" name="email" class="login__container__input" id="email" required />
+                    
+                    <p class="mini-textos">Senha</p>
+                    <input type="password" name="senha" class="login__container__input" required />
+                    
+                    <p class="mini-textos">Telefone</p>
+                    <input type="tel" name="telefone" class="login__container__input" pattern="\d{10,11}" placeholder="Apenas números" required />
+                    
+                    <button type="submit" class="login__container__button">Cadastrar</button>
+                    <p class="mini-textos">Já tem conta? <a href="../../../index.html"><span class="red-text">Faça login</span></a></p>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <img class="trem" src="../images/imglogin/trem.png" alt="Ícone trem" />
+    </footer>
+    <script src="../js/cadastro.js"></script>
+
+</body>
+</html>

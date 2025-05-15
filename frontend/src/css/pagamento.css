@@ -1,0 +1,215 @@
+/* General Styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+@media screen and (max-width: 430px) {
+    body {
+        height: 100%;
+    }
+    
+
+    .app-container {
+        background-color: white;
+        height: 100vh;
+        width: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        padding-top: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 14%;
+        color: #fff;
+    }
+    .settings {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    .settings img {
+        height: 58px;
+        width: 58px;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    .logo img {
+        width: 100%;
+        height: 100%;
+    }
+           
+
+        /* .logo, .settings-icon {
+            height: 29px;
+        } */
+    .espacar{
+        height: 2%;
+        width: 100%;
+    }
+
+    .ticket-card {
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .acima{
+        height: 40%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .faixa{
+        background-color: #ff0000;
+        width: 100%;
+        height: 15px;
+    }
+    .ticket-info {
+        height: 180px;
+        width: 70%;
+        background-color: rgb(192, 190, 190);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .posfaixa{
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+    }
+    .availability{
+        font-size: 20px;
+    }
+    .ticket-logo {
+        width: 90px;
+        height: auto;
+        padding-left: 5px;
+    }
+    .separar{
+        width: 60px;
+        height: auto;
+    }
+
+    .ticket-details {
+        margin-left: 10px;
+    }
+
+    .ticket-details h2 {
+        font-size: 14px;
+        color: #060404;
+        margin-bottom: 5px;
+        padding-right: 10px;
+    }
+
+    .ticket-details .price {
+        font-size: 24px;
+        font-weight: bold;
+        color: #ff0000;
+    }
+
+    .ticket-details .availability {
+        font-size: 50px;
+        color: #666;
+        margin-top: 5px;
+        background-color: #eee;
+    }
+
+    .purchase-options {
+        padding: 20px;
+    }
+
+    .purchase-options h3 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .payment-method {
+        display: flex;
+        align-items: center;
+        padding: 13px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .payment-method img {
+        width: 40px;
+        height: auto;
+        margin-right: 10px;
+    }
+
+    .history-button {
+        display: block;
+        width: 90%;
+        height: 50px;
+        margin: 20px auto;
+        background-color: #f4f4f4;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .history-button:hover {
+        background-color: #ddd;
+    }
+
+    footer {
+        position: fixed !important;
+        bottom: 0 !important;
+        width: 100%;
+        height: 7%;
+        background-color: #FF0000;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    } 
+    footer div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }	
+    footer a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        text-decoration: none;
+        color: white;
+    }
+    footer div img {
+        width: 100%;
+        height: 60%;
+    }
+}   
+
+    .bb{
+        width: 30px;
+    }
+
+

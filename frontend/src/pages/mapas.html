@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+        <link rel="stylesheet" href="../css/mapas.css">
+    </head>
+    <body>
+        <div class="tudo">
+            <div id="map">
+            </div>
+                <div class="pagina">
+                    <div class="form">
+                        <form id="searchForm">
+                            <input type="text" class="form-control" id="searchInputStart" name="pesquisaStart" placeholder="Local de partida">
+                            <input type="text" id="searchInputEnd" class="form-control" name="pesquisaEnd" placeholder="Local de destino">
+                            <p></p>
+                            <input type="submit" value="Pesquisar">
+                        </form>
+                    </div>
+                </div>
+        </div>
+
+        <footer>
+            <a href="../pages/pagamento.html">
+              <div class="saldo">
+                <img src="../images/imghome/compras (2).png" alt="">
+              </div>
+            </a>
+            <a href="../pages/home.html">
+              <div class="home">
+                <img src="../images/imghome/casa (3).png" alt="">
+              </div>
+            </a>  
+            <a href="../pages/perfil.html">
+              <div class="perfil">
+                <img src="../images/imghome/solteiro (2).png" alt="">
+              </div>
+            </a>
+    </footer>
+
+        <script>
+            var map = L.map('map').setView([-23.5505, -46.6333], 30); // São Paulo, Brasil
+            L.tileLayer('https://tile.jawg.io/jawg-streets/{z}/{x}/{y}.png?access-token=PQtOM8nvetA4UCUCLUDfnhG4br0fSjvyW5wW6yw24HfrmboFWuGXBABOiEMYE4bC', {
+                attribution: 'Map data © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.jawg.io">Jawg</a>',
+                maxZoom: 18
+            }).addTo(map);
+        
+            L.marker([-23.5505, -46.6333]).addTo(map).bindPopup('São Paulo, Brasil').openPopup();
+        
+            var startMarker, endMarker, routeLayer;
+        
+            document.getElementById('searchForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+                var startQuery = document.getElementById('searchInputStart').value;
+                var endQuery = document.getElementById('searchInputEnd').value;
+                console.log('Pesquisando por:', startQuery, 'e', endQuery); // Adicionado para depuração
+        
+                Promise.all([
+                    fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${startQuery}`).then(response => response.json()),
+                    fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${endQuery}`).then(response => response.json())
+                ])
+                .then(data => {
+                    if (data[0].length > 0 && data[1].length > 0) {
+                        var startLat = data[0][0].lat;
+                        var startLon = data[0][0].lon;
+                        var endLat = data[1][0].lat;
+                        var endLon = data[1][0].lon;
+                        console.log('Coordenadas encontradas:', startLat, startLon, endLat, endLon); // Adicionado para depuração
+        
+                        // Remover marcadores e rota anteriores, se existirem
+                        if (startMarker) map.removeLayer(startMarker);
+                        if (endMarker) map.removeLayer(endMarker);
+                        if (routeLayer) map.removeLayer(routeLayer);
+        
+                        // Adicionar novos marcadores para os pontos de partida e destino
+                        startMarker = L.marker([startLat, startLon]).addTo(map)
+                            .bindPopup('Partida: ' + startQuery)
+                            .openPopup();
+                        endMarker = L.marker([endLat, endLon]).addTo(map)
+                            .bindPopup('Destino: ' + endQuery)
+                            .openPopup();
+        
+                        // Centralizar o mapa entre os dois pontos
+                        var bounds = L.latLngBounds([[startLat, startLon], [endLat, endLon]]);
+                        map.fitBounds(bounds);
+        
+                        // Traçar a rota usando a API do OSRM
+                        fetch(`https://router.project-osrm.org/route/v1/driving/${startLon},${startLat};${endLon},${endLat}?overview=full&geometries=geojson`)
+                            .then(response => response.json())
+                            .then(routeData => {
+                                if (routeData.routes.length > 0) {
+                                    var route = routeData.routes[0].geometry;
+                                    routeLayer = L.geoJSON(route, {
+                                        style: {
+                                            color: 'blue',
+                                            weight: 5
+                                        }
+                                    }).addTo(map);
+                                } else {
+                                    alert('Rota não encontrada');
+                                }
+                            })
+                            .catch(error => console.error('Erro ao traçar a rota:', error));
+                    } else {
+                        alert('Local de partida ou destino não encontrado');
+                    }
+                })
+                .catch(error => console.error('Erro:', error));
+            });
+        </script>            
+        <a href="./home.html"><img class="seta" src="../images/imgmapas/icone-fleche-droite-rouge.png" alt=""></a>
+        <script>
+            // Função para ler os parâmetros da URL
+            function getQueryParam(param) {
+                const urlParams = new URLSearchParams(window.location.search);
+                return urlParams.get(param);
+            }
+        
+            // Executa ao carregar a página
+            window.onload = function() {
+                const startQuery = getQueryParam('start');
+                const endQuery = getQueryParam('end');
+        
+                // Se os parâmetros existirem, preencha os campos e submeta o formulário
+                if (startQuery && endQuery) {
+                    document.getElementById('searchInputStart').value = startQuery;
+                    document.getElementById('searchInputEnd').value = endQuery;
+        
+                    // Simula o envio do formulário para planejar a rota
+                    document.getElementById('searchForm').dispatchEvent(new Event('submit'));
+                }
+            }
+        </script>
+        
+    </body>
+</html>
