@@ -1,20 +1,20 @@
 # 🔄 Retrospectiva da Sprint X
 
 ## ✅ O que deu certo?
-- Ponto positivo 1
-- Ponto positivo 2
+- proatividade 
+- ajuda disponibilizada por todos integrantes
 
 ## 🚫 O que não deu certo?
-- Ponto de melhoria 1
-- Ponto de melhoria 2
+- comunicação de quais funções serão testadas e por quem
+- 
 
 ## 🛠️ O que podemos melhorar para a próxima sprint?
-- Melhoria 1
-- Melhoria 2
+- poder colocar mais itens no proximo sprint
+- melhor comunicação
 
 ## 🧠 Aprendizados da sprint
-- Aprendizado 1
-- Aprendizado 2
+- API na pratica
+- 
 
 ## 🙋 Avaliação individual (cada aluno preenche)
 - Nome:
