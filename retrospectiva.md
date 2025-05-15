@@ -15,8 +15,8 @@
 - Documentar melhor o que está sendo feito por cada um.
 
 ## 🧠 Aprendizados da sprint
-- API na pratica
-- 
+- Aprendizado prático com a API;
+- Importância da comunicação clara na equipe.
 
 ## 🙋 Avaliação individual (cada aluno preenche)
 - Nome:
