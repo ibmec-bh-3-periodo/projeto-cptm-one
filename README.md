@@ -183,7 +183,7 @@ Caso as condições sejam atendidas, o endpoint retorna a mensagem de sucesso na
 - ✅ O que fiz ontem:
   - Reorganizai as pastas.
 - 🚧 O que vou fazer hoje:
-  - Iniciar API de cadastros dos usuarios.
+  - Iniciar API de login dos usuarios.
 - ⚠️ Impedimentos:
   - nenhum.
 
@@ -269,9 +269,9 @@ Caso as condições sejam atendidas, o endpoint retorna a mensagem de sucesso na
 
 ### 👤 Lucas B
 - ✅ O que fiz ontem:
-  - Teste de carrossel 
+  - Teste de carrossel.
 - 🚧 O que vou fazer hoje:
-  - 
+  - Melhorar API e fazer API/pagina de cadastro.
 - ⚠️ Impedimentos:
   - nenhum.
 
@@ -281,9 +281,9 @@ Caso as condições sejam atendidas, o endpoint retorna a mensagem de sucesso na
 - ✅ O que fiz ontem:
   - Apagar arquivos nao usados
 - 🚧 O que vou fazer hoje:
-  - 
+  - Melhorar o teste de email.
 - ⚠️ Impedimentos:
-  - 
+  - nenhum.
 
 ---
 
