@@ -22,3 +22,9 @@
 - Funcionar em outros dispositivos
 - Banco de dados de usuários operacional
 - Sistema de verificação implementado
+
+# 🏁 Relatório de Abertura - Sprint 2
+## 🎯 Objetivos da Sprint
+- [ ] informações em tempo das linhas de metro 
+- [ ] Adição de tickets através da api
+- [ ] Melhorias no cadastro do usuario 
