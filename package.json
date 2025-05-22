@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
+    "start": "node build/app.js",
     "build": "npx tsc",
-    "dev": "ts-node src/server/app.ts && build"
+    "dev": "npm run build && ts-node src/server/app.ts"
   },
   "repository": {
     "type": "git",
