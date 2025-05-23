@@ -4,6 +4,7 @@ import path from 'path';
 import fs from 'fs';
 import bodyParser from 'body-parser';
 import cors from 'cors';
+import http from 'http';
 
 
 
@@ -68,6 +69,19 @@ app.post('/login/cadastro', (req, res) => {
         }
     });
 });
+
+// Servir arquivos estáticos (CSS, JS, etc)
+app.use("/css", express.static(path.join(__dirname, "../frontend/src/css")));
+app.use("/js", express.static(path.join(__dirname, "../frontend/src/js")));
+app.use("/images", express.static(path.join(__dirname, "../frontend/src/images")));
+app.use("/pages", express.static(path.join(__dirname, "../frontend/src/pages")));
+
+app.get("/", (req, res) => {
+    res.sendFile(path.join(__dirname, "../index.html"));
+  });
+
+
+
 app.listen(3000, () => {
     console.log('Server is running on port 3000');
 });

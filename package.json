@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "dev": "npx tsc && ts-node src/app.ts"
+    "build": "tsc ",
+    "start": "node build/app.js",
+    "dev": "tsx watch src/app.ts"
   },
   "repository": {
     "type": "git",
@@ -32,7 +34,8 @@
     "cors": "^2.8.5",
     "express": "^5.1.0",
     "jest": "^29.7.0",
-    "jsdom": "^26.1.0"
+    "jsdom": "^26.1.0",
+    "tsx": "^4.19.4"
   },
   "jest": {
     "testEnvironment": "jest-environment-jsdom"

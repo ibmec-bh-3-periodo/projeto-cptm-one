@@ -9,7 +9,7 @@ document.getElementById('signupForm').addEventListener('submit', function(event)
         validateSenha(senhaInput);
 
         // Envio da requisição para a API
-        fetch("http://localhost:3000/login/verificacao", {
+        fetch("/login/verificacao", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -23,7 +23,7 @@ document.getElementById('signupForm').addEventListener('submit', function(event)
         .then(data => {
             if (data.success) {
                 alert(data.message);  // Exibe mensagem de sucesso
-                window.location.href = "frontend/src/pages/home.html";  // Redireciona para a página de sucesso
+                window.location.href = "/pages/home.html";  // Redireciona para a página de sucesso
             } else {
                 alert(data.message);  // Exibe mensagem de erro
             }
