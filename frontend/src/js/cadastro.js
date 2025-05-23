@@ -17,7 +17,7 @@ document.getElementById('signupForm').addEventListener('submit', async function(
         validateTelefone(telefone);
 
         // Envia os dados para a API
-        const response = await fetch("http://localhost:3000/login/cadastro", {
+        const response = await fetch("/login/cadastro", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -29,7 +29,7 @@ document.getElementById('signupForm').addEventListener('submit', async function(
         console.log(data); // Para depuração
 
         if (data.success) {
-            window.location.href = "../../../index.html";
+            window.location.href = "/";
             alert(data.message); // Exibe mensagem de sucesso
              // Redireciona para a página de login (ajuste o caminho conforme sua estrutura real)
         } else {
