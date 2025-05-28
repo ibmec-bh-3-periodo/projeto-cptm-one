@@ -29,21 +29,22 @@
 - [ ] informações em tempo das linhas de metro 
 - [ ] Adição de tickets através da api
 - [ ] Melhorias no cadastro do usuario
+- [ ] Docker 
       
 ## 👥 Distribuição de Tarefas
 | Integrante          | Tarefa                                     | Prazo         |
 |---------------------|--------------------------------------------|---------------|
-| Mateus              |                                            | xx/0x/2025    |
-| Lucas Tergilene     |                                            | xx/0x/2025    |
-| Lucas Buccini       |                                            | xx/0x/2025    |
-| Marcello            |                                            | xx/0x/2025    |
-** O restante do tempo até o final da Sprint será direcionado a testes unitários e organização das documentações
+| Mateus              | tempo das linhas de metro                  | 28/05/2025    |
+| Lucas Tergilene     | tempo das linhas de metro                  | 28/05/2025    |
+| Lucas Buccini       | tickets e usuarios API                     | 28/05/2025    |
+| Marcello            | tickets e usuarios API                     | 28/05/2025    |
+** Docker
 ## 🛠️ Ferramentas e Tecnologias Previstas
 - TypeScript (cadastro)
 - HTML/CSS (responsividade)
 - Banco de dados (armazenamento)
 - Docker
   ## 📌 Critérios de Entrega
-- Visualização em tempo real das linhas de metro
+- Visualização do tempo das linhas de metro
 - Edição e alteração dos usuarios através da pagina de usuarios
 - Possibilidade de adição e vinculação dos tickets a um usuario
