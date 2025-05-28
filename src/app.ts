@@ -131,7 +131,7 @@ app.post("/usuario/comprar-ticket", (req, res) => {
 
         fs.writeFile(dataFilePath, JSON.stringify(usuarios, null, 2), err => {
             if (err) return res.status(500).json({ message: "Erro ao salvar" });
-            res.status(200).json({ message: "Ticket comprado com sucesso" });
+            res.status(200).json({success: true ,message: "Ticket comprado com sucesso" });
         });
     });
 });
