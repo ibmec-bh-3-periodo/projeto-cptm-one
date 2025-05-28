@@ -1,57 +1,49 @@
 document.getElementById('signupForm').addEventListener('submit', function(event) {
-    event.preventDefault();  // Impede o envio do formulário até a validação ser realizada
-    
-    const emailInput = document.getElementById('email').value;
-    const senhaInput = document.getElementById('senha').value;
+    event.preventDefault();  // Impede envio do formulário
+
+    const emailField = document.getElementById('email'); // elemento input
+    const senhaField = document.getElementById('senha');
+
+    const emailValue = emailField.value.trim();  // valor digitado
+    const senhaValue = senhaField.value.trim();
 
     try {
-        validateEmail(emailInput);        
-        validateSenha(senhaInput);
+        validateEmail(emailValue);
+        validateSenha(senhaValue);
 
-        // Envio da requisição para a API
         fetch("/login/verificacao", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
             },
-            body: JSON.stringify({
-                email: emailInput,
-                senha: senhaInput
-            })
+            body: JSON.stringify({ email: emailValue, senha: senhaValue })
         })
         .then(response => response.json())
         .then(data => {
             if (data.success) {
-                alert(data.message);  // Exibe mensagem de sucesso
-                window.location.href = "/pages/home.html";  // Redireciona para a página de sucesso
+                sessionStorage.setItem("userEmail", emailValue); // ← AQUI: salvando o valor, não o elemento!
+                alert("Login bem-sucedido");
+                window.location.href = "/pages/home.html";
             } else {
-                alert(data.message);  // Exibe mensagem de erro
+                alert(data.message);
             }
         })
-        .catch(error => {
-            console.error('Erro:', error);
-            alert('Erro ao fazer login. Tente novamente mais tarde.');
+        .catch(err => {
+            console.error("Erro na requisição:", err);
+            alert("Erro na conexão com o servidor.");
         });
 
     } catch (error) {
-        alert('Erro: ' + error.message);
+        alert("Erro: " + error.message);
     }
 });
 
-// Funções de validação
 function validateEmail(email) {
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;  // Padrão básico para validação de e-mail
-
-    if (!emailPattern.test(email) && email !== "") {
-        throw new Error('O e-mail digitado não é válido. Por favor, insira um e-mail correto.');
-    }
-    if (email === "") {
-        throw new Error("Digite seu email!");
-    }
+    const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!pattern.test(email)) throw new Error("E-mail inválido.");
+    if (!email) throw new Error("Digite seu e-mail!");
 }
 
 function validateSenha(senha) {
-    if (senha === "") {
-        throw new Error("Digite sua senha!");
-    }
+    if (!senha) throw new Error("Digite sua senha!");
 }

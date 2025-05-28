@@ -1,47 +1,57 @@
-const nomeInput = document.getElementById("nome");
-const emailInput = document.getElementById("email");
-const telefoneInput = document.getElementById("telefone");
-const imageUpload = document.getElementById("imageUpload");
-const profileImage = document.getElementById("profileImage");
-const greeting = document.getElementById("greeting");
+document.getElementById('signupForm').addEventListener('submit', function(event) {
+    event.preventDefault();  // Impede o envio do formulário até a validação ser realizada
+    
+    const emailInput = document.getElementById('email').value;
+    const senhaInput = document.getElementById('senha').value;
 
-// Função para carregar os dados salvos no localStorage
-function loadProfileData() {
-    const savedName = localStorage.getItem("nome");
-    const savedEmail = localStorage.getItem("email");
-    const savedTelefone = localStorage.getItem("telefone");
-    const savedImage = localStorage.getItem("profileImage");
+    try {
+        validateEmail(emailInput);        
+        validateSenha(senhaInput);
 
-    if (savedName) {
-        nomeInput.value = savedName;
-        greeting.textContent = `Olá, ${savedName}`;
-    }
-    if (savedEmail) emailInput.value = savedEmail;
-    if (savedTelefone) telefoneInput.value = savedTelefone;
-    if (savedImage) profileImage.src = savedImage;
-}
+        // Envio da requisição para a API
+        fetch("/login/verificacao", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                email: emailInput,
+                senha: senhaInput
+            })
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                alert(data.message);  // Exibe mensagem de sucesso
+                window.location.href = "/pages/home.html";  // Redireciona para a página de sucesso
+            } else {
+                alert(data.message);  // Exibe mensagem de erro
+            }
+        })
+        .catch(error => {
+            console.error('Erro:', error);
+            alert('Erro ao fazer login. Tente novamente mais tarde.');
+        });
 
-// Função para salvar os dados no localStorage
-function saveProfileData() {
-    localStorage.setItem("nome", nomeInput.value);
-    localStorage.setItem("email", emailInput.value);
-    localStorage.setItem("telefone", telefoneInput.value);
-}
-
-// Evento para salvar a imagem no localStorage e exibi-la
-imageUpload.addEventListener("change", (event) => {
-    const file = event.target.files[0];
-    if (file) {
-        const reader = new FileReader();
-        reader.onload = function(e) {
-            profileImage.src = e.target.result;
-            localStorage.setItem("profileImage", e.target.result);
-        };
-        reader.readAsDataURL(file);
+    } catch (error) {
+        alert('Erro: ' + error.message);
     }
 });
 
-// Eventos para salvar os campos de texto no localStorage quando forem modificados
-nomeInput.addEventListener("input", saveProfileData);
-emailInput.addEventListener("input", saveProfileData);
-telefoneInput.addEventListener("input", saveProfileData);
+// Funções de validação
+function validateEmail(email) {
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;  // Padrão básico para validação de e-mail
+
+    if (!emailPattern.test(email) && email !== "") {
+        throw new Error('O e-mail digitado não é válido. Por favor, insira um e-mail correto.');
+    }
+    if (email === "") {
+        throw new Error("Digite seu email!");
+    }
+}
+
+function validateSenha(senha) {
+    if (senha === "") {
+        throw new Error("Digite sua senha!");
+    }
+}

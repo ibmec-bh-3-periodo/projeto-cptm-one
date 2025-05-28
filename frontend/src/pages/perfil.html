@@ -17,20 +17,20 @@
             <div class="profile-picture">
                 <img src="/images/imgperfil/perfilic.png" alt="Foto de Perfil">
             </div>
-            <h2>Olá, <span id="username"></span></h2>
+            <h2><span id="greeting"></span></h2>
         </div>
 
         <form id="profileForm">
             <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+            <input type="text" id="nome" name="nome" disabled>
 
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" placeholder="Seu email" readonly>
 
             <label for="telefone">Telefone:</label>
-            <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
+            <input type="tel" id="telefone" name="telefone" disabled>
             
-            <button type="button" id="save" onclick="saveProfile()">Salvar</button>
+            <button type="button" id="save">Sair</button>
         </form>
 
         <div class="boti">
@@ -64,47 +64,6 @@
         </a>
     </footer>
 
-    <script>
-        function loadProfile() {
-            const email = localStorage.getItem('userEmail');
-            const nome = localStorage.getItem('userName');
-            const telefone = localStorage.getItem('userPhone');
-
-            if (email) {
-                const username = email.split('@')[0];
-                document.getElementById('username').textContent = nome;
-                document.getElementById('email').value = email;
-            }
-
-            if (nome && telefone) {
-                document.getElementById('nome').value = nome;
-                document.getElementById('telefone').value = telefone;
-            } else {
-                alert('Por favor, preencha seu nome e telefone para continuar.');
-                document.getElementById('nome').focus();
-            }
-        }
-
-        function saveProfile() {
-            const nome = document.getElementById('nome').value;
-            const telefone = document.getElementById('telefone').value;
-
-            if (nome && telefone) {
-                localStorage.setItem('userName', nome);
-                localStorage.setItem('userPhone', telefone);
-                alert('Perfil salvo com sucesso!');
-                location.reload();
-            } else {
-                alert('Por favor, preencha o nome e o telefone.');
-                if (!nome) {
-                    document.getElementById('nome').focus();
-                } else {
-                    document.getElementById('telefone').focus();
-                }
-            }
-        }
-
-        window.onload = loadProfile;
-    </script>
+    <script src="/js/perfil.js"></script>
 </body>
 </html>

@@ -124,5 +124,13 @@
     "email": "i@i.com",
     "senha": "123456",
     "telefone": "31999999999"
+  },
+  {
+    "nome": "rui",
+    "sobrenome": "ali",
+    "email": "r@r.com",
+    "senha": "12345678",
+    "telefone": "31999999999",
+    "tickets": 0
   }
 ]
