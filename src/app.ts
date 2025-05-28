@@ -93,6 +93,27 @@ app.get('/usuario/perfil/:email', (req, res) => {
     });
 });
 
+app.get('/usuario/tickets/:email', (req, res) => {
+    const { email } = req.params;
+
+    fs.readFile(dataFilePath, 'utf8', (err, fileData) => {
+        if (err) {
+            console.error('Erro ao ler o arquivo:', err);
+            return res.status(500).json({ success: false, message: 'Erro interno' });
+        }
+
+        const usuarios = JSON.parse(fileData);
+        const usuario = usuarios.find((user: any) => user.email === email);
+
+        if (usuario) {
+            res.status(200).json({ tickets: usuario.tickets });
+        } else {
+            res.status(404).json({ success: false, message: 'Usuário não encontrado' });
+        }
+    });
+});
+
+
 
 // Servir arquivos estáticos (CSS, JS, etc)
 app.use("/css", express.static(path.join(__dirname, "../frontend/src/css")));

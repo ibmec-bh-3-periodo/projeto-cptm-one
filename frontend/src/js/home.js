@@ -3,7 +3,7 @@ const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
 
 // 🔢 Quantidade de tickets a exibir
-const numberOfTickets = 2;
+const numberOfTickets = 3;
 
 // 🎟️ Gera os tickets dinamicamente
 for (let i = 0; i < numberOfTickets; i++) {
