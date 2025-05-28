@@ -2,19 +2,82 @@ const track = document.querySelector('.carousel-track');
 const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
 
+let numberOfTickets = 0; // Essa variável será preenchida via API
 let currentIndex = 0;
 
-// Função para atualizar a posição do carrossel
-function updateCarousel() {
-    const ticketWidth = document.querySelector('.ticket').clientWidth;
-    track.style.transform = `translateX(-${currentIndex * ticketWidth}px)`;
+// 🔹 Busca número de tickets do usuário logado
+async function carregarQuantidadeDeTickets() {
+    const email = sessionStorage.getItem("userEmail");
+    if (!email) {
+        alert("Usuário não autenticado.");
+        return;
+    }
 
-    // Mostrar ou ocultar os botões conforme necessário
-    prevBtn.style.visibility = currentIndex === 0 ? 'hidden' : 'visible';
-    nextBtn.style.visibility = currentIndex === document.querySelectorAll('.ticket').length - 1 ? 'hidden' : 'visible';
+    try {
+        const response = await fetch(`http://localhost:3000/usuario/tickets/${encodeURIComponent(email)}`);
+        if (!response.ok) throw new Error("Erro ao buscar tickets");
+
+        const data = await response.json();
+        numberOfTickets = data.tickets;
+
+        console.log("Número de tickets do usuário:", numberOfTickets);
+
+        gerarTickets();         // Renderiza os tickets
+        updateCarousel();       // Atualiza o carrossel
+
+    } catch (error) {
+        console.error("Erro ao carregar número de tickets:", error);
+    }
 }
 
-// Botão "Próximo"
+// 🎟️ Gera visualmente os tickets com base em `numberOfTickets`
+function gerarTickets() {
+    for (let i = 0; i < numberOfTickets; i++) {
+        const ticketDiv = document.createElement("div");
+        ticketDiv.classList.add("ticket");
+
+        const link = document.createElement("a");
+        link.href = "/pages/ticketemuso.html";
+
+        const img = document.createElement("img");
+        img.src = "/images/imghome/ticket.png";
+        img.alt = `Ticket ${i + 1}`;
+
+        link.appendChild(img);
+        ticketDiv.appendChild(link);
+        track.appendChild(ticketDiv);
+    }
+
+    // ➕ Botão de comprar tickets
+    const buyTicket = document.createElement("div");
+    buyTicket.classList.add("ticket", "buy-ticket");
+    buyTicket.innerHTML = `
+        <a href="/pages/pagamento.html">
+            <img src="/images/imghome/mais (1).png" alt="Comprar" class="buy-icon">
+            <p>Comprar Tickets</p>
+        </a>
+    `;
+    track.appendChild(buyTicket);
+}
+
+// 🔄 Atualiza visualmente o carrossel
+function updateCarousel() {
+    const ticketWidth = document.querySelector('.ticket')?.clientWidth || 0;
+    track.style.transform = `translateX(-${currentIndex * ticketWidth}px)`;
+
+    prevBtn.style.visibility = currentIndex === 0 ? 'hidden' : 'visible';
+    nextBtn.style.visibility = currentIndex >= document.querySelectorAll('.ticket').length - 1 ? 'hidden' : 'visible';
+}
+
+// ⬅️ Botão Anterior
+prevBtn.addEventListener('click', () => {
+    if (currentIndex > 0) {
+        currentIndex--;
+        updateCarousel();
+    }
+});
+
+// ➡️ Botão Próximo
 nextBtn.addEventListener('click', () => {
     const ticketCount = document.querySelectorAll('.ticket').length;
     if (currentIndex < ticketCount - 1) {
@@ -23,32 +86,7 @@ nextBtn.addEventListener('click', () => {
     }
 });
 
-// Botão "Anterior"
-prevBtn.addEventListener('click', () => {
-    if (currentIndex > 0) {
-        currentIndex--;
-        updateCarousel();
-    }
-});
-
-// Inicializar a visibilidade dos botões
-updateCarousel();
-
-// Função para ler os parâmetros da URL
-function getQueryParam(param) {
-    const urlParams = new URLSearchParams(window.location.search);
-    return urlParams.get(param);
-}
-
-// Obter os valores dos parâmetros "start" e "end"
-const startQuery = getQueryParam('start');
-const endQuery = getQueryParam('end');
-
-// Se os valores de partida e destino existirem, faça a pesquisa
-if (startQuery && endQuery) {
-    document.getElementById('searchInputStart').value = startQuery;
-    document.getElementById('searchInputEnd').value = endQuery;
-
-    // Simular o envio do formulário para disparar a função de pesquisa
-    document.getElementById('searchForm').dispatchEvent(new Event('submit'));
-}
+// 🚀 Inicia o carregamento ao abrir a página
+window.onload = () => {
+    carregarQuantidadeDeTickets();
+};

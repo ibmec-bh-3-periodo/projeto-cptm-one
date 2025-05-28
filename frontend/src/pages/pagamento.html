@@ -1,85 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/css/pagamento.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pagamento</title>
+  <link rel="stylesheet" href="/css/pagamento.css">
 </head>
 <body>
-    <div class="app-container">
-        <!-- Header Section -->
-        <header>
-            <div class="logo"><a href="/pages/home.html"><img src="/images/imghome/logo.png" alt=""></a></div>
-            <div class="settings"><img src="/images/imghome/configuracao (1).png" alt=""></div>
-        </header>
-        
-        <div class="espacar">
+  <div class="app-container">
+    <!-- Header -->
+    <header>
+      <div class="logo"><a href="/pages/home.html"><img src="/images/imghome/logo.png" alt=""></a></div>
+      <div class="settings"><img src="/images/imghome/configuracao (1).png" alt=""></div>
+    </header>
 
+    <div class="espacar"></div>
+
+    <!-- Ticket Info -->
+    <section class="ticket-card">
+      <div class="ticket-info">
+        <div class="acima">
+          <img src="/images/imgpagamento/logocomfrase.png" alt="CPTM" class="ticket-logo">
+          <img src="/images/imgpagamento/sep.png" alt="sep" class="separar">
+          <div class="ticket-details">
+            <h2>Valor do ticket</h2>
+            <span class="price">R$ 5,50</span><br>
+          </div>
         </div>
-
-        <!-- Ticket Card -->
-        <section class="ticket-card">
-            <div class="ticket-info">
-                <div class="acima">
-                    <img src="/images/imgpagamento/logocomfrase.png" alt="CPTM" class="ticket-logo">
-                    <img src="/images/imgpagamento/sep.png" alt="sep" class="separar">
-                    <div class="ticket-details">
-                        <h2>valor do ticket</h2>
-                        <span class="price">R$ 5,50</span><br>
-                    </div>
-                </div>
-                <div class="faixa">
-                </div>
-                <div class="posfaixa">
-                    <span class="availability">3 tickets disponíveis para uso</span>
-                </div>
-            </div>
-        </section>
-
-        <div class="espacar">
+        <div class="faixa"></div>
+        <div class="posfaixa">
+          <span class="availability" id="ticketCount">Carregando tickets...</span>
         </div>
+      </div>
+    </section>
 
-        <!-- Purchase Section -->
-        <section class="purchase-options">
-            <h3>Comprar tickets:</h3>
-            <div class="payment-method">
-                <img src="/images/imgpagamento/pix.png" alt="PIX">
-                <span>PIX</span>
-            </div>
-            <div class="payment-method">
-                <img src="/images/imgpagamento/credit.png" alt="Cartão de Crédito">
-                <span>Cartão de Crédito</span>
-            </div>
-            <div class="payment-method">
-                <img src="/images/imgpagamento/boletosimb.png" alt="Boleto">
-                <span>Boleto</span>
-            </div>
-        </section>
+    <div class="espacar"></div>
 
-        <!-- Purchase History Button -->
-        <button class="history-button">Histórico de compras</button>
+    <!-- Métodos de pagamento -->
+    <section class="purchase-options">
+      <h3>Comprar tickets:</h3>
 
-        <!-- Bottom Navigation -->
-        <footer>
-            <a href="/pages/pagamento.html">
-              <div class="saldo">
-                <img src="/images/imghome/compras (2).png" alt="">
-              </div>
-            </a>
-            <a href="/pages/home.html">
-              <div class="home">
-                <img src="/images/imghome/casa (3).png" alt="">
-              </div>
-            </a>  
-            <a href="/pages/perfil.html">
-              <div class="perfil">
-                <img src="/images/imghome/solteiro (2).png" alt="">
-              </div>
-            </a>
-        </footer>
-    </div>
+      <div class="payment-method" onclick="comprarTicket()">
+        <img src="/images/imgpagamento/pix.png" alt="PIX">
+        <span>PIX</span>
+      </div>
+      <div class="payment-method" onclick="comprarTicket()">
+        <img src="/images/imgpagamento/credit.png" alt="Cartão de Crédito">
+        <span>Cartão de Crédito</span>
+      </div>
+      <div class="payment-method" onclick="comprarTicket()">
+        <img src="/images/imgpagamento/boletosimb.png" alt="Boleto">
+        <span>Boleto</span>
+      </div>
+    </section>
 
+    <!-- Botão histórico -->
+    <button class="history-button">Histórico de compras</button>
 
+    <!-- Rodapé -->
+    <footer>
+      <a href="/pages/pagamento.html">
+        <div class="saldo"><img src="/images/imghome/compras (2).png" alt=""></div>
+      </a>
+      <a href="/pages/home.html">
+        <div class="home"><img src="/images/imghome/casa (3).png" alt=""></div>
+      </a>
+      <a href="/pages/perfil.html">
+        <div class="perfil"><img src="/images/imghome/solteiro (2).png" alt=""></div>
+      </a>
+    </footer>
+  </div>
+
+  <script src="/js/pagamento.js"></script>
 </body>
 </html>

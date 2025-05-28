@@ -4,126 +4,48 @@
     "sobrenome": "Buccini",
     "telefone": "11999999999",
     "email": "lucasmbuccini@gmail.com",
-    "senha": "Buccini2006"
+    "senha": "Buccini2006",
+    "tickets": 3
   },
   {
     "nome": "Marcello",
     "sobrenome": "Rocha",
     "telefone": "11999999999",
     "email": "marcellofbbr@gmail.com",
-    "senha": "marcello2705"
+    "senha": "marcello2705",
+    "tickets": 2
   },
   {
     "nome": "Mateus",
     "sobrenome": "Milanez",
     "telefone": "11999999999",
     "email": "mateusmilanezdepaula@gmail.com",
-    "senha": "mateus12321"
+    "senha": "mateus12321",
+    "tickets": 1
   },
   {
     "nome": "Lucas",
     "sobrenome": "Tergileni",
     "telefone": "11999999999",
     "email": "lucastergi@gmail.com",
-    "senha": "12345678"
+    "senha": "12345678",
+    "tickets": 0
   },
   {
     "nome": "Lucas",
     "sobrenome": "Mendes",
     "email": "lucasmendesbuccini1@outlook.com",
     "senha": "Buccini2006",
-    "telefone": "31983472636"
+    "telefone": "31983472636",
+    "tickets": 4
   },
   {
     "nome": "LUCAS",
     "sobrenome": "BUCCINI",
     "email": "teste1@gmail.com",
     "senha": "Buccini2006",
-    "telefone": "31983472636"
-  },
-  {
-    "nome": "LUCAS",
-    "sobrenome": "BUCCINI",
-    "email": "teste@gmail.com",
-    "senha": "Buccini2006",
-    "telefone": "31121212121"
-  },
-  {
-    "nome": "Lucas",
-    "sobrenome": "Buccini",
-    "email": "asasas@sasasas.com",
-    "senha": "12345678",
-    "telefone": "31999999999"
-  },
-  {
-    "nome": "teste",
-    "sobrenome": "teste",
-    "email": "teste@ag.com",
-    "senha": "12345678",
-    "telefone": "12345678900"
-  },
-  {
-    "nome": "lalal",
-    "sobrenome": "lalalal",
-    "email": "lala@lalla.com",
-    "senha": "12345678",
-    "telefone": "31999999999"
-  },
-  {
-    "nome": "lalal",
-    "sobrenome": "lalalal",
-    "email": "lala@lall.com",
-    "senha": "2131234556",
-    "telefone": "31999999999"
-  },
-  {
-    "nome": "lalal",
-    "sobrenome": "lalalal",
-    "email": "lala@lll.com",
-    "senha": "asasasasassa",
-    "telefone": "31999999999"
-  },
-  {
-    "nome": "lalal",
-    "sobrenome": "lalalal",
-    "email": "lala@ll.com",
-    "senha": "asasasasassasa",
-    "telefone": "31999999999"
-  },
-  {
-    "nome": "lalal",
-    "sobrenome": "lalalal",
-    "email": "lala@l.com",
-    "senha": "12345678",
-    "telefone": "31999999999"
-  },
-  {
-    "nome": "tetst",
-    "sobrenome": "tst",
-    "email": "tst@tst.com",
-    "senha": "12345678",
-    "telefone": "31999999999"
-  },
-  {
-    "nome": "Mateus",
-    "sobrenome": "De Paula",
-    "email": "teste8@gmail.com",
-    "senha": "teteulindo",
-    "telefone": "31999999999"
-  },
-  {
-    "nome": "Lucas",
-    "sobrenome": "Teste",
-    "email": "tst@tst.co",
-    "senha": "Buccini2006",
-    "telefone": "31999999999"
-  },
-  {
-    "nome": "LUCAS",
-    "sobrenome": "BUCCINI",
-    "email": "i@i.com",
-    "senha": "123456",
-    "telefone": "31999999999"
+    "telefone": "31983472636",
+    "tickets": 5
   },
   {
     "nome": "rui",
@@ -132,5 +54,13 @@
     "senha": "12345678",
     "telefone": "31999999999",
     "tickets": 0
+  },
+  {
+    "nome": "Renata",
+    "sobrenome": "Mendes",
+    "email": "rgmendes@gmail.com",
+    "senha": "123456",
+    "telefone": "31999999999",
+    "tickets": 3
   }
 ]

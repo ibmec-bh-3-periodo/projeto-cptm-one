@@ -14,7 +14,7 @@ body {
     height: 100vh;
     margin: 0;
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 450px) {
     body {
         height: 100%;
     }
