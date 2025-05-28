@@ -53,7 +53,8 @@ app.post('/login/cadastro', (req, res) => {
         const usuarioExistente = usuarios.find((user: any) => user.email === email);
 
         if (!usuarioExistente) {
-            const novoUsuario = { nome, sobrenome, email, senha, telefone };
+            const tickets = 0; // Inicializa com um array vazio de tickets
+            const novoUsuario = { nome, sobrenome, email, senha, telefone, tickets };
             const novosDados = [...usuarios, novoUsuario]; // Adiciona o novo usuário
 
             // Escreve os dados atualizados no arquivo
@@ -69,6 +70,29 @@ app.post('/login/cadastro', (req, res) => {
         }
     });
 });
+
+
+app.get('/usuario/perfil/:email', (req, res) => {
+    const { email } = req.params;
+
+    fs.readFile(dataFilePath, 'utf8', (err, fileData) => {
+        if (err) {
+            console.error('Erro ao ler o arquivo:', err);
+            return res.status(500).json({ success: false, message: 'Erro interno' });
+        }
+
+        const usuarios = JSON.parse(fileData);
+        const usuario = usuarios.find((user:any) => user.email === email);
+
+        if (usuario) {
+            const { nome, sobrenome, email, telefone } = usuario;
+            res.status(200).json({ nome, sobrenome, email, telefone });
+        } else {
+            res.status(404).json({ success: false, message: 'Usuário não encontrado' });
+        }
+    });
+});
+
 
 // Servir arquivos estáticos (CSS, JS, etc)
 app.use("/css", express.static(path.join(__dirname, "../frontend/src/css")));

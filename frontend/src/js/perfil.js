@@ -1,47 +1,45 @@
 const nomeInput = document.getElementById("nome");
 const emailInput = document.getElementById("email");
 const telefoneInput = document.getElementById("telefone");
-const imageUpload = document.getElementById("imageUpload");
-const profileImage = document.getElementById("profileImage");
 const greeting = document.getElementById("greeting");
+const sair = document.getElementById("save");
 
-// Função para carregar os dados salvos no localStorage
-function loadProfileData() {
-    const savedName = localStorage.getItem("nome");
-    const savedEmail = localStorage.getItem("email");
-    const savedTelefone = localStorage.getItem("telefone");
-    const savedImage = localStorage.getItem("profileImage");
-
-    if (savedName) {
-        nomeInput.value = savedName;
-        greeting.textContent = `Olá, ${savedName}`;
-    }
-    if (savedEmail) emailInput.value = savedEmail;
-    if (savedTelefone) telefoneInput.value = savedTelefone;
-    if (savedImage) profileImage.src = savedImage;
-}
-
-// Função para salvar os dados no localStorage
-function saveProfileData() {
-    localStorage.setItem("nome", nomeInput.value);
-    localStorage.setItem("email", emailInput.value);
-    localStorage.setItem("telefone", telefoneInput.value);
-}
-
-// Evento para salvar a imagem no localStorage e exibi-la
-imageUpload.addEventListener("change", (event) => {
-    const file = event.target.files[0];
-    if (file) {
-        const reader = new FileReader();
-        reader.onload = function(e) {
-            profileImage.src = e.target.result;
-            localStorage.setItem("profileImage", e.target.result);
-        };
-        reader.readAsDataURL(file);
-    }
+sair.addEventListener("click", function() {
+    sessionStorage.removeItem("userEmail");
+    window.location.href = "/";
 });
 
-// Eventos para salvar os campos de texto no localStorage quando forem modificados
-nomeInput.addEventListener("input", saveProfileData);
-emailInput.addEventListener("input", saveProfileData);
-telefoneInput.addEventListener("input", saveProfileData);
+
+function getLoggedUserEmail() {
+    const email = sessionStorage.getItem("userEmail");
+    if (!email) {
+        alert("Usuário não autenticado.");
+        window.location.href = "/";
+    }
+    return email;
+}
+
+async function loadProfile() {
+    const email = getLoggedUserEmail();
+
+    try {
+        const response = await fetch(`http://localhost:3000/usuario/perfil/${encodeURIComponent(email)}`);
+        if (!response.ok) throw new Error("Erro ao buscar perfil");
+
+        const data = await response.json();
+
+        nomeInput.value = `${data.nome} ${data.sobrenome}`.trim(); // nome completo
+        emailInput.value = data.email || '';
+        telefoneInput.value = data.telefone || '';
+        greeting.textContent = `Seja Bem-Vindo, ${data.nome}!`;
+    } catch (error) {
+        console.error("Erro ao carregar perfil:", error);
+        alert("Erro ao carregar os dados do perfil.");
+    }
+}
+
+window.onload = loadProfile;
+
+
+
+
