@@ -115,7 +115,7 @@ Retorna uma resposta em json, com o success, sendo true ou false e as mensagens 
 
 | Código | Tipo de Erro           | Descrição                                     |
 |--------|------------------------|-----------------------------------------------|
-| 200    | OK                     | Requisição bem-sucedida                       |
+| 20q    | OK                     | Requisição bem-sucedida                       |
 | 400    | Bad Request            | Requisição malformada ou dados inválidos      |
 | 401    | Unauthorized           | Email ou senha invalidos                      |
 | 500    | Internal Server Error  | Erro inesperado no servidor                   |
@@ -147,9 +147,31 @@ Caso as condições sejam atendidas, o endpoint retorna a mensagem de sucesso na
 
 | Código | Tipo de Erro           | Descrição                                     |
 |--------|------------------------|-----------------------------------------------|
-| 200    | OK                     | Requisição bem-sucedida                       |
+| 201    | OK                     | Requisição bem-sucedida                       |
 | 400    | Bad Request            | Requisição malformada ou dados inválidos      |
 | 409    | Conflict               | Conflito de dados (ex: email já cadastrado)   |
+| 500    | Internal Server Error  | Erro inesperado no servidor                   |
+
+
+-Base URL do perfil:
+https://localhost:3000/usuario/perfil/:email
+Endpoint: GET
+
+-Descrição:
+Recebe o email do usuario, e procura ele na base de dados para atualizar a pagina de perfil. 
+Retorna na rota 200 o codigo de sucesso, com a pagina de perfil totalmente integrada com o banco de dados, de forma automatica.
+
+
+-Parâmetros:
+| Campo     | Tipo   | Obrigatório | Descrição                     |
+|-----------|--------|-------------|-------------------------------|
+| email     | string | Sim         | Email do usuário              |
+-Erros: 
+
+| Código | Tipo de Erro           | Descrição                                     |
+|--------|------------------------|-----------------------------------------------|
+| 200    | OK                     | Requisição bem-sucedida                       |
+| 404    | Bad Request            | Requisição malformada ou dados inválidos      |
 | 500    | Internal Server Error  | Erro inesperado no servidor                   |
 
 
