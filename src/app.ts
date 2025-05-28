@@ -100,6 +100,8 @@ app.use("/js", express.static(path.join(__dirname, "../frontend/src/js")));
 app.use("/images", express.static(path.join(__dirname, "../frontend/src/images")));
 app.use("/pages", express.static(path.join(__dirname, "../frontend/src/pages")));
 
+
+
 app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "../index.html"));
   });

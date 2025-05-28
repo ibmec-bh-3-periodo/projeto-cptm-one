@@ -52,3 +52,5 @@ if (startQuery && endQuery) {
     // Simular o envio do formulário para disparar a função de pesquisa
     document.getElementById('searchForm').dispatchEvent(new Event('submit'));
 }
+
+
