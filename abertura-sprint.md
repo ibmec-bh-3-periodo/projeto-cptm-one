@@ -38,7 +38,8 @@
 | Lucas Tergilene     | tempo das linhas de metro                  | 28/05/2025    |
 | Lucas Buccini       | tickets e usuarios API                     | 28/05/2025    |
 | Marcello            | tickets e usuarios API                     | 28/05/2025    |
-** Docker
+
+
 ## 🛠️ Ferramentas e Tecnologias Previstas
 - TypeScript (cadastro)
 - HTML/CSS (responsividade)
