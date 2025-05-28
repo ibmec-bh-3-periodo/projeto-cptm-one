@@ -1,57 +1,39 @@
-document.getElementById('signupForm').addEventListener('submit', function(event) {
-    event.preventDefault();  // Impede o envio do formulário até a validação ser realizada
-    
-    const emailInput = document.getElementById('email').value;
-    const senhaInput = document.getElementById('senha').value;
+const nomeInput = document.getElementById("nome");
+const emailInput = document.getElementById("email");
+const telefoneInput = document.getElementById("telefone");
+const greeting = document.getElementById("greeting");
+const sair = document.getElementById("save");
+
+function getLoggedUserEmail() {
+    const email = sessionStorage.getItem("userEmail");
+    if (!email) {
+        alert("Usuário não autenticado.");
+        window.location.href = "/";
+    }
+    return email;
+}
+
+async function loadProfile() {
+    const email = getLoggedUserEmail();
 
     try {
-        validateEmail(emailInput);        
-        validateSenha(senhaInput);
+        const response = await fetch(`http://localhost:3000/usuario/perfil/${encodeURIComponent(email)}`);
+        if (!response.ok) throw new Error("Erro ao buscar perfil");
 
-        // Envio da requisição para a API
-        fetch("/login/verificacao", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({
-                email: emailInput,
-                senha: senhaInput
-            })
-        })
-        .then(response => response.json())
-        .then(data => {
-            if (data.success) {
-                alert(data.message);  // Exibe mensagem de sucesso
-                window.location.href = "/pages/home.html";  // Redireciona para a página de sucesso
-            } else {
-                alert(data.message);  // Exibe mensagem de erro
-            }
-        })
-        .catch(error => {
-            console.error('Erro:', error);
-            alert('Erro ao fazer login. Tente novamente mais tarde.');
-        });
+        const data = await response.json();
 
+        nomeInput.value = `${data.nome} ${data.sobrenome}`.trim(); // nome completo
+        emailInput.value = data.email || '';
+        telefoneInput.value = data.telefone || '';
+        greeting.textContent = `Seja Bem-Vindo, ${data.nome}!`;
     } catch (error) {
-        alert('Erro: ' + error.message);
-    }
-});
-
-// Funções de validação
-function validateEmail(email) {
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;  // Padrão básico para validação de e-mail
-
-    if (!emailPattern.test(email) && email !== "") {
-        throw new Error('O e-mail digitado não é válido. Por favor, insira um e-mail correto.');
-    }
-    if (email === "") {
-        throw new Error("Digite seu email!");
+        console.error("Erro ao carregar perfil:", error);
+        alert("Erro ao carregar os dados do perfil.");
     }
 }
 
-function validateSenha(senha) {
-    if (senha === "") {
-        throw new Error("Digite sua senha!");
-    }
-}
+window.onload = loadProfile;
+
+
+
+
