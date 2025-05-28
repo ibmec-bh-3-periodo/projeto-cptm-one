@@ -96,7 +96,7 @@ Este projeto utiliza as seguintes tecnologias e ferramentas:
 ### 6. Documentação API
 
 -Base URL de Login:
-https://api.exemplo.com/login/verificacao  
+https://localhost:3000/login/verificacao  
 Endpoint:POST (Precisa de um envio de body, para comparar o cadastro e fazer autenticação, alem de proteger os dados do usuario)
 
 -Descrição:
@@ -126,7 +126,7 @@ Retorna uma resposta em json, com o success, sendo true ou false e as mensagens 
 ---------------
 
 -Base URL de cadastro:
-https://api.exemplo.com/login/cadastro
+https://localhost:3000/login/cadastro
 Endpoint: POST
 
 -Descrição:
