@@ -114,6 +114,29 @@ app.get('/usuario/tickets/:email', (req, res) => {
 });
 
 
+app.post("/usuario/comprar-ticket", (req, res) => {
+    const { email } = req.body;
+
+    fs.readFile(dataFilePath, "utf8", (err, fileData) => {
+        if (err) return res.status(500).json({ message: "Erro ao ler dados" });
+
+        const usuarios = JSON.parse(fileData);
+        const userIndex = usuarios.findIndex((u:any) => u.email === email);
+
+        if (userIndex === -1) {
+            return res.status(404).json({ message: "Usuário não encontrado" });
+        }
+
+        usuarios[userIndex].tickets += 1;
+
+        fs.writeFile(dataFilePath, JSON.stringify(usuarios, null, 2), err => {
+            if (err) return res.status(500).json({ message: "Erro ao salvar" });
+            res.status(200).json({ message: "Ticket comprado com sucesso" });
+        });
+    });
+});
+
+
 
 // Servir arquivos estáticos (CSS, JS, etc)
 app.use("/css", express.static(path.join(__dirname, "../frontend/src/css")));
