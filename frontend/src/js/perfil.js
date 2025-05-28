@@ -4,6 +4,12 @@ const telefoneInput = document.getElementById("telefone");
 const greeting = document.getElementById("greeting");
 const sair = document.getElementById("save");
 
+sair.addEventListener("click", function() {
+    sessionStorage.removeItem("userEmail");
+    window.location.href = "/";
+});
+
+
 function getLoggedUserEmail() {
     const email = sessionStorage.getItem("userEmail");
     if (!email) {
