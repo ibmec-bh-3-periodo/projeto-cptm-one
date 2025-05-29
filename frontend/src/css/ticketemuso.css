@@ -9,8 +9,35 @@ body {
     display: flex;
     flex-direction: column;
 }
+.botao-uso {
+    margin-top: -115px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
 
-@media screen and (max-width: 430px){
+#usarTicketBtn {
+    background-color: #FF0000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+}
+
+#usarTicketBtn:hover {
+    background-color: #cc0000;
+}
+
+
+@media screen and (max-width: 431px){
     body {
         font-family: 'Roboto', sans-serif;
         height: 100vh;

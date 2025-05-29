@@ -136,6 +136,41 @@ app.post("/usuario/comprar-ticket", (req, res) => {
     });
 });
 
+// Rota para consumir um ticket
+app.post('/usuario/usar-ticket', (req, res) => {
+    const { email } = req.body;
+
+    fs.readFile(dataFilePath, 'utf8', (err, fileData) => {
+        if (err) {
+            console.error('Erro ao ler o arquivo:', err);
+            return res.status(500).json({ success: false, message: 'Erro interno' });
+        }
+
+        let usuarios = JSON.parse(fileData);
+        const index = usuarios.findIndex((user:any) => user.email === email);
+
+        if (index === -1) {
+            return res.status(404).json({ success: false, message: 'Usuário não encontrado' });
+        }
+
+        if (usuarios[index].tickets > 0) {
+            usuarios[index].tickets -= 1;
+        } else {
+            return res.status(400).json({ success: false, message: 'Sem tickets disponíveis' });
+        }
+
+        fs.writeFile(dataFilePath, JSON.stringify(usuarios, null, 2), (err) => {
+            if (err) {
+                console.error('Erro ao salvar arquivo:', err);
+                return res.status(500).json({ success: false, message: 'Erro ao atualizar dados' });
+            }
+
+            res.status(200).json({ success: true, message: 'Ticket usado com sucesso' });
+        });
+    });
+});
+
+
 
 
 // Servir arquivos estáticos (CSS, JS, etc)
