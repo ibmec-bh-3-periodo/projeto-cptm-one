@@ -310,3 +310,91 @@ Retorna na rota 200 o codigo de sucesso, com a pagina de perfil totalmente integ
 ---
 
 
+### 📅 Data: `22/05/2025`
+
+---
+
+### 👤 Lucas B
+- ✅ O que fiz ontem:
+  - API cadastro
+- 🚧 O que vou fazer hoje:
+  - Organizar pastas para Docker
+- ⚠️ Impedimentos:
+  - nenhum.
+
+---
+
+### 👤 Marcelo
+- ✅ O que fiz ontem:
+  - Arrumei o conflito
+- 🚧 O que vou fazer hoje:
+  - melhorar documentação e verificar documentação de entrega
+- ⚠️ Impedimentos:
+  - nenhum.
+
+---
+
+### 👤 Mateus
+- ✅ O que fiz ontem:
+  - Teste de perfil aprimorada
+- 🚧 O que vou fazer hoje:
+  - Documentação e organização das funcinalidades
+- ⚠️ Impedimentos:
+  - nenhum.
+---
+
+  ### 👤 Lucas T
+- ✅ O que fiz ontem:
+  - Apagar arquivos nao usados
+- 🚧 O que vou fazer hoje:
+  - Melhorar o teste de email.
+- ⚠️ Impedimentos:
+  - nenhum.
+
+---
+
+### 📅 Data: `28/05/2025`
+
+---
+
+### 👤 Lucas B
+- ✅ O que fiz ontem:
+  - organizei pastas docker
+- 🚧 O que vou fazer hoje:
+  - trabalho funcional no docker
+- ⚠️ Impedimentos:
+  - nenhum.
+
+
+---
+
+### 👤 Marcelo
+- ✅ O que fiz ontem:
+  - Arrumei o conflito
+- 🚧 O que vou fazer hoje:
+  - melhorar documentação e verificar documentação de entrega
+- ⚠️ Impedimentos:
+  - nenhum.
+
+---
+
+### 👤 Mateus
+- ✅ O que fiz ontem:
+  - Teste de perfil aprimorada
+- 🚧 O que vou fazer hoje:
+  - Documentação e organização das funcinalidades
+- ⚠️ Impedimentos:
+  - nenhum.
+---
+
+  ### 👤 Lucas T
+- ✅ O que fiz ontem:
+  - Apagar arquivos nao usados
+- 🚧 O que vou fazer hoje:
+  - Melhorar o teste de email.
+- ⚠️ Impedimentos:
+  - nenhum.
+
+---
+
+
