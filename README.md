@@ -326,9 +326,9 @@ Retorna na rota 200 o codigo de sucesso, com a pagina de perfil totalmente integ
 
 ### 👤 Marcelo
 - ✅ O que fiz ontem:
-  - Arrumei o conflito
+  - Aprimoramento do teste senhas
 - 🚧 O que vou fazer hoje:
-  - melhorar documentação e verificar documentação de entrega
+  - Organizar pastas do docker 
 - ⚠️ Impedimentos:
   - nenhum.
 
@@ -336,9 +336,9 @@ Retorna na rota 200 o codigo de sucesso, com a pagina de perfil totalmente integ
 
 ### 👤 Mateus
 - ✅ O que fiz ontem:
-  - Teste de perfil aprimorada
+  - Melhorias na organização das pastas da api
 - 🚧 O que vou fazer hoje:
-  - Documentação e organização das funcinalidades
+  - Correção de conflitos na api
 - ⚠️ Impedimentos:
   - nenhum.
 ---
@@ -370,9 +370,9 @@ Retorna na rota 200 o codigo de sucesso, com a pagina de perfil totalmente integ
 
 ### 👤 Marcelo
 - ✅ O que fiz ontem:
-  - Arrumei o conflito
+  - contribuí para a organização das pastas do docker
 - 🚧 O que vou fazer hoje:
-  - melhorar documentação e verificar documentação de entrega
+  - ajudar no funcionamento apropriado do docker
 - ⚠️ Impedimentos:
   - nenhum.
 
@@ -382,7 +382,7 @@ Retorna na rota 200 o codigo de sucesso, com a pagina de perfil totalmente integ
 - ✅ O que fiz ontem:
   - Melhorias na Api
 - 🚧 O que vou fazer hoje:
-  - Continuação das linhas em tempo real
+  - Correção das melhorias na api
 - ⚠️ Impedimentos:
   - nenhum.
 ---
