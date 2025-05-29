@@ -345,9 +345,9 @@ Retorna na rota 200 o codigo de sucesso, com a pagina de perfil totalmente integ
 
   ### 👤 Lucas T
 - ✅ O que fiz ontem:
-  - Apagar arquivos nao usados
+  - Revisão do readme 
 - 🚧 O que vou fazer hoje:
-  - Melhorar o teste de email.
+  - Aprimorar os textos da Sprint2.
 - ⚠️ Impedimentos:
   - nenhum.
 
@@ -380,18 +380,18 @@ Retorna na rota 200 o codigo de sucesso, com a pagina de perfil totalmente integ
 
 ### 👤 Mateus
 - ✅ O que fiz ontem:
-  - Teste de perfil aprimorada
+  - Melhorias na Api
 - 🚧 O que vou fazer hoje:
-  - Documentação e organização das funcinalidades
+  - Continuação das linhas em tempo real
 - ⚠️ Impedimentos:
   - nenhum.
 ---
 
   ### 👤 Lucas T
 - ✅ O que fiz ontem:
-  - Apagar arquivos nao usados
+  - Inicio das linhas em tempo real
 - 🚧 O que vou fazer hoje:
-  - Melhorar o teste de email.
+  - Continuação das linhas em tempo real
 - ⚠️ Impedimentos:
   - nenhum.
 
