@@ -94,8 +94,16 @@ document.addEventListener('DOMContentLoaded', function() {
     'Serviço': 741
   };
 
+  let popupInterval = null;
+
   document.querySelectorAll('.linha').forEach(div => {
     div.addEventListener('click', function() {
+      // Limpa qualquer intervalo anterior
+      if (popupInterval) {
+        clearInterval(popupInterval);
+        popupInterval = null;
+      }
+
       const nomeLinha = this.querySelector('span').innerText.trim();
       const tempo = temposLinha[nomeLinha] || 3;
 
@@ -110,7 +118,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const stepMs = totalMs / steps;
       let elapsed = 0;
 
-      const interval = setInterval(() => {
+      popupInterval = setInterval(() => {
         progress += 1;
         elapsed += stepMs;
         loading.style.width = progress + '%';
@@ -125,7 +133,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         if (progress >= 100) {
-          clearInterval(interval);
+          clearInterval(popupInterval);
+          popupInterval = null;
           document.getElementById('popup-message').innerText = `Próximo trem chegou!`;
         }
       }, stepMs);
@@ -133,6 +142,11 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   document.getElementById('close-popup').onclick = function() {
+    // Limpa o intervalo ao fechar o popup
+    if (popupInterval) {
+      clearInterval(popupInterval);
+      popupInterval = null;
+    }
     document.getElementById('popup').style.display = 'none';
     document.getElementById('loading-progress').style.width = '0%';
     document.getElementById('popup-message').innerText = '';
