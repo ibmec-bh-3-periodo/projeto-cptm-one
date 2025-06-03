@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="/css/informacoes.css">
-  <style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="/css/informacoes.css">
+<style>
   .popup {
     position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
     background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; z-index: 9999;
@@ -19,7 +19,7 @@
   .loading-progress {
     height: 100%; width: 0%; background: #009CA6; border-radius: 10px; transition: width 0.3s;
   }
-  </style>
+</style>
 </head>
 <body>
   <div class="app-container">
@@ -41,7 +41,6 @@
         <div class="linha" style="background-color: #000000;">710 <span>Serviço</span></div>
       </main>
     </div>
-    
     <div class="infobaixo">
       <p>A CPTM mantém as estações em funcionamento de todos os dias da semana, das 4h à meia-noite.</p>
       <p>A transferência entre linhas é garantida desde que o passageiro esteja em sua última estação de transferência até a 0h.</p>
@@ -84,42 +83,50 @@
     </div>
   </div>
 
-  <script>
+<script>
 document.addEventListener('DOMContentLoaded', function() {
-  // Defina os tempos de chegada para cada linha (em minutos)
   const temposLinha = {
-    'Rubi': 3,
-    'Turquesa': 2,
-    'Coral': 10,
-    'Safira': 12,
-    'Jade': 5,
-    'Serviço': 7
+    'Rubi': 300,
+    'Turquesa': 230,
+    'Coral': 1000,
+    'Safira': 1213,
+    'Jade': 58567,
+    'Serviço': 741
   };
 
   document.querySelectorAll('.linha').forEach(div => {
     div.addEventListener('click', function() {
-      // Pega o nome da linha (dentro do <span>)
       const nomeLinha = this.querySelector('span').innerText.trim();
-      const tempo = temposLinha[nomeLinha] || 3; // valor padrão se não encontrar
+      const tempo = temposLinha[nomeLinha] || 3;
 
       document.getElementById('popup').style.display = 'flex';
       document.getElementById('popup-title').innerText = `Linha ${this.innerText.trim()}`;
-      document.getElementById('popup-message').innerText = '';
       let progress = 0;
       const loading = document.getElementById('loading-progress');
       loading.style.width = '0%';
 
-      // Calcula o tempo total do loading em ms (ex: 3min = 180000ms)
-      const totalMs = tempo * 1000; // para testes rápidos, use *1000 (1s = 1min). Para produção, use *60000.
+      const totalMs = tempo * 1000; // para produção use tempo * 60000
       const steps = 100;
       const stepMs = totalMs / steps;
+      let elapsed = 0;
 
       const interval = setInterval(() => {
         progress += 1;
+        elapsed += stepMs;
         loading.style.width = progress + '%';
+
+        // Tempo restante em segundos
+        const tempoRestante = Math.ceil((totalMs - elapsed) / 1000);
+        if (tempoRestante > 0) {
+          document.getElementById('popup-message').innerText = 
+            `Próximo trem chega em ${tempoRestante} segundo${tempoRestante > 1 ? 's' : ''}!`;
+        } else {
+          document.getElementById('popup-message').innerText = `Próximo trem chegou!`;
+        }
+
         if (progress >= 100) {
           clearInterval(interval);
-          document.getElementById('popup-message').innerText = `Próximo trem chega em ${tempo} minutos!`;
+          document.getElementById('popup-message').innerText = `Próximo trem chegou!`;
         }
       }, stepMs);
     });
@@ -134,4 +141,3 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 </body>
 </html>
-
