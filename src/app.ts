@@ -13,6 +13,8 @@ import http from 'http';
 
 const dataFilePath = path.resolve(__dirname, "./data/usuarios.json");
 
+const caminhoarquivolinhas = path.resolve(__dirname, "./data/linhadata.json");
+
 const app = express();
 app.use(express.json());
 app.use(bodyParser.json());
@@ -167,6 +169,43 @@ app.post('/usuario/usar-ticket', (req, res) => {
 
             res.status(200).json({ success: true, message: 'Ticket usado com sucesso' });
         });
+    });
+});
+
+app.get('/linhas/info', (req, res) => {
+    fs.readFile(caminhoarquivolinhas, 'utf8', (err, fileData) => {
+        if (err) {
+            console.error('Erro ao ler o arquivo:', err);
+            return res.status(500).json({ 
+                success: false, 
+                message: 'Erro ao carregar informações das linhas' 
+            });
+        }
+        
+        try {
+            const data = JSON.parse(fileData);
+            
+            // Formata os dados para retornar apenas o necessário
+            const linhasFormatadas = data.linhas.map((linha: any) => ({
+                id: linha.id,
+                nome: linha.nome,
+                trajeto: linha.trajeto,
+                intervalos: linha.intervalos,
+                observacoes: linha.observacoes
+            }));
+            
+            res.status(200).json({
+                success: true,
+                linhas: linhasFormatadas
+            });
+            
+        } catch (parseError) {
+            console.error('Erro ao parsear o arquivo:', parseError);
+            res.status(500).json({ 
+                success: false, 
+                message: 'Erro ao processar informações das linhas' 
+            });
+        }
     });
 });
 

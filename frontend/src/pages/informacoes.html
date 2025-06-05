@@ -1,68 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/css/informacoes.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="/css/informacoes.css">
+<style>
+  .popup {
+    position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+    background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; z-index: 9999;
+  }
+  .popup-content {
+    background: #fff; padding: 30px; border-radius: 10px; min-width: 300px; text-align: center; position: relative;
+  }
+  .loading-bar {
+    width: 100%; background: #eee; height: 20px; border-radius: 10px; margin: 20px 0;
+  }
+  .loading-progress {
+    height: 100%; width: 0%; background: #009CA6; border-radius: 10px; transition: width 0.3s;
+  }
+</style>
 </head>
 <body>
-    <div class="app-container">
-        <!-- Header Section -->
-        <header>
-          <div class="logo"><a href="/pages/home.html"><img src="/images/imghome/logo.png" alt=""></a></div>
-          <div class="settings"><img src="/images/imghome/configuracao (1).png" alt=""></div>
-        </header>
-        <div class="tudo">
-            <section>
-                <h1>SISTEMA DE INTERVALOS</h1>
-                <p>Selecione a linha e confira os intervalos médios programados entre os trens.</p>
-            </section>
-        
-            <main>
-                <div class="linha" style="background-color: #A50034;">7 <span>Rubi</span></div>
-                <div class="linha" style="background-color: #009CA6;">10 <span>Turquesa</span></div>
-                <div class="linha" style="background-color: #F58220;">11 <span>Coral</span></div>
-                <div class="linha" style="background-color: #002776;">12 <span>Safira</span></div>
-                <div class="linha" style="background-color: #00A859;">13 <span>Jade</span></div>
-                <div class="linha" style="background-color: #000000;">710 <span>Serviço</span></div>
-            </main>
-        </div>
-        
-        <div class="infobaixo">
-            <p>A CPTM mantém as estações em funcionamento de todos os dias da semana, das 4h à meia-noite.</p>
-            <p>A transferência entre linhas é garantida desde que o passageiro esteja em sua última estação de transferência até a 0h.</p>
-            <p>O intervalo máximo entre trens aos fins de semana e feriados é de 35 minutos.</p>
-        </div>
-
-        <!-- Principal -->
-        <section class="info">
-            
-        </section>
-
-        <div class="espacar">
-        </div>
-
-        <!-- Bottom Navigation -->
-      <footer>
-          <a href="/pages/pagamento.html">
-            <div class="saldo">
-              <img src="/images/imghome/compras (2).png" alt="">
-            </div>
-          </a>
-          <a href="/pages/home.html">
-            <div class="home">
-              <img src="/images/imghome/casa (3).png" alt="">
-            </div>
-          </a>  
-          <a href="/pages/perfil.html">
-            <div class="perfil">
-              <img src="/images/imghome/solteiro (2).png" alt="">
-            </div>
-          </a>
-     </footer>
+  <div class="app-container">
+    <header>
+      <div class="logo"><a href="/pages/home.html"><img src="/images/imghome/logo.png" alt=""></a></div>
+      <div class="settings"><img src="/images/imghome/configuracao (1).png" alt=""></div>
+    </header>
+    <div class="tudo">
+      <section>
+        <h1>SISTEMA DE INTERVALOS</h1>
+        <p>Selecione a linha e confira os intervalos médios programados entre os trens.</p>
+      </section>
+      <main>
+        <div class="linha" style="background-color: #A50034;">7 <span>Rubi</span></div>
+        <div class="linha" style="background-color: #009CA6;">10 <span>Turquesa</span></div>
+        <div class="linha" style="background-color: #F58220;">11 <span>Coral</span></div>
+        <div class="linha" style="background-color: #002776;">12 <span>Safira</span></div>
+        <div class="linha" style="background-color: #00A859;">13 <span>Jade</span></div>
+        <div class="linha" style="background-color: #000000;">710 <span>Serviço</span></div>
+      </main>
+    </div>
+    <div class="infobaixo">
+      <p>A CPTM mantém as estações em funcionamento de todos os dias da semana, das 4h à meia-noite.</p>
+      <p>A transferência entre linhas é garantida desde que o passageiro esteja em sua última estação de transferência até a 0h.</p>
+      <p>O intervalo máximo entre trens aos fins de semana e feriados é de 35 minutos.</p>
     </div>
 
+    <!-- Principal -->
+    <section class="info"></section>
+    <div class="espacar"></div>
 
+    <!-- Bottom Navigation -->
+    <footer>
+      <a href="/pages/pagamento.html">
+        <div class="saldo">
+        <img src="/images/imghome/compras (2).png" alt="">
+        </div>
+      </a>
+      <a href="/pages/home.html">
+        <div class="home">
+        <img src="/images/imghome/casa (3).png" alt="">
+        </div>
+      </a>  
+      <a href="/pages/perfil.html">
+        <div class="perfil">
+        <img src="/images/imghome/solteiro (2).png" alt="">
+        </div>
+      </a>
+    </footer>
+  </div>
+
+  <!-- Popup dentro do body -->
+  <div id="popup" class="popup" style="display:none;">
+    <div class="popup-content">
+    <span id="close-popup" style="cursor:pointer;float:right;font-size:24px;">&times;</span>
+    <h2 id="popup-title"></h2>
+    <div class="loading-bar">
+      <div class="loading-progress" id="loading-progress"></div>
+    </div>
+    <p id="popup-message"></p>
+    </div>
+  </div>
+
+<script src="/js/info.js"></script>
+</body>
+</html>
 </body>
 </html>
