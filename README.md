@@ -385,6 +385,7 @@ Retorna na rota 200 o codigo de sucesso, com a pagina de perfil totalmente integ
   - Correção das melhorias na api
 - ⚠️ Impedimentos:
   - nenhum.
+    
 ---
 
   ### 👤 Lucas T
@@ -396,5 +397,49 @@ Retorna na rota 200 o codigo de sucesso, com a pagina de perfil totalmente integ
   - nenhum.
 
 ---
+
+### 📅 Data: `04/06/2025`
+
+---
+
+### 👤 Lucas B
+- ✅ O que fiz ontem:
+  - organizei pastas docker
+- 🚧 O que vou fazer hoje:
+  - trabalho funcional no docker
+- ⚠️ Impedimentos:
+  - nenhum.
+
+---
+
+### 👤 Marcelo
+- ✅ O que fiz ontem:
+  - contribuí para a organização das pastas do docker
+- 🚧 O que vou fazer hoje:
+  - ajudar no funcionamento apropriado do docker
+- ⚠️ Impedimentos:
+  - nenhum.
+
+---
+
+### 👤 Mateus
+- ✅ O que fiz ontem:
+  - Melhorias na Api
+- 🚧 O que vou fazer hoje:
+  - Correção das melhorias na api
+- ⚠️ Impedimentos:
+  - nenhum.
+---
+
+  ### 👤 Lucas T
+- ✅ O que fiz ontem:
+  - Inicio das linhas em tempo real
+- 🚧 O que vou fazer hoje:
+  - Continuação das linhas em tempo real
+- ⚠️ Impedimentos:
+  - nenhum.
+
+---
+
 
 
