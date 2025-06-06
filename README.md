@@ -1,6 +1,7 @@
 # [Grupo 2] CPTM ONE
 
-- [Link dos slides]: https://www.canva.com/design/DAGWyK66ZW4/KLwBWce2_8KtsezsDRf78Q/edit?utm_content=DAGWyK66ZW4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton 
+- [Link dos slides]:
+   https://www.canva.com/design/DAGWyK66ZW4/KLwBWce2_8KtsezsDRf78Q/edit?utm_content=DAGWyK66ZW4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton 
 - [Modelo de registro de Dailies](https://docs.google.com/document/d/1sg9-XnS0XWlmYKIeP0JerL6xg7LS9sgfdZZyv98aP5c/edit?usp=sharing)
 
 ## Integrantes
