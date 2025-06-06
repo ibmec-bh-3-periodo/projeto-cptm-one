@@ -174,6 +174,67 @@ Retorna na rota 200 o codigo de sucesso, com a pagina de perfil totalmente integ
 | 404    | Bad Request            | Requisição malformada ou dados inválidos      |
 | 500    | Internal Server Error  | Erro inesperado no servidor                   |
 
+-Base URL para listar tickets:
+https://localhost:3000/usuario/tickets/:email
+Endpoint: GET
+
+-Descrição:
+Recebe o email do usuário como parâmetro na URL e retorna os tickets associados ao usuário. Caso o usuário não seja encontrado, retorna um erro.
+
+-Parâmetros:
+| Campo     | Tipo   | Obrigatório | Descrição                     |
+|-----------|--------|-------------|-------------------------------|
+| email     | string | Sim         | Email do usuário              |
+
+-Erros: 
+| Código | Tipo de Erro           | Descrição                                     |
+|--------|------------------------|-----------------------------------------------|
+| 200    | OK                     | Requisição bem-sucedida                       |
+| 404    | Not Found              | Usuário não encontrado                        |
+| 500    | Internal Server Error  | Erro inesperado no servidor                   |
+
+---
+
+-Base URL para comprar ticket:
+https://localhost:3000/usuario/comprar-ticket
+Endpoint: POST
+
+-Descrição:
+Recebe o email do usuário no corpo da requisição e adiciona um ticket ao usuário. Caso o usuário não seja encontrado, retorna um erro.
+
+-Parâmetros:
+| Campo     | Tipo   | Obrigatório | Descrição                     |
+|-----------|--------|-------------|-------------------------------|
+| email     | string | Sim         | Email do usuário              |
+
+-Erros: 
+| Código | Tipo de Erro           | Descrição                                     |
+|--------|------------------------|-----------------------------------------------|
+| 200    | OK                     | Ticket comprado com sucesso                  |
+| 404    | Not Found              | Usuário não encontrado                        |
+| 500    | Internal Server Error  | Erro inesperado no servidor                   |
+
+---
+
+-Base URL para usar ticket:
+https://localhost:3000/usuario/usar-ticket
+Endpoint: POST
+
+-Descrição:
+Recebe o email do usuário no corpo da requisição e consome um ticket do usuário. Caso o usuário não tenha tickets disponíveis ou não seja encontrado, retorna um erro.
+
+-Parâmetros:
+| Campo     | Tipo   | Obrigatório | Descrição                     |
+|-----------|--------|-------------|-------------------------------|
+| email     | string | Sim         | Email do usuário              |
+
+-Erros: 
+| Código | Tipo de Erro           | Descrição                                     |
+|--------|------------------------|-----------------------------------------------|
+| 200    | OK                     | Ticket usado com sucesso                     |
+| 400    | Bad Request            | Sem tickets disponíveis                      |
+| 404    | Not Found              | Usuário não encontrado                        |
+| 500    | Internal Server Error  | Erro inesperado no servidor                   |
 
 ##  7. Daily's
 

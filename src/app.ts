@@ -172,42 +172,7 @@ app.post('/usuario/usar-ticket', (req, res) => {
     });
 });
 
-app.get('/linhas/info', (req, res) => {
-    fs.readFile(caminhoarquivolinhas, 'utf8', (err, fileData) => {
-        if (err) {
-            console.error('Erro ao ler o arquivo:', err);
-            return res.status(500).json({ 
-                success: false, 
-                message: 'Erro ao carregar informações das linhas' 
-            });
-        }
-        
-        try {
-            const data = JSON.parse(fileData);
-            
-            // Formata os dados para retornar apenas o necessário
-            const linhasFormatadas = data.linhas.map((linha: any) => ({
-                id: linha.id,
-                nome: linha.nome,
-                trajeto: linha.trajeto,
-                intervalos: linha.intervalos,
-                observacoes: linha.observacoes
-            }));
-            
-            res.status(200).json({
-                success: true,
-                linhas: linhasFormatadas
-            });
-            
-        } catch (parseError) {
-            console.error('Erro ao parsear o arquivo:', parseError);
-            res.status(500).json({ 
-                success: false, 
-                message: 'Erro ao processar informações das linhas' 
-            });
-        }
-    });
-});
+
 
 
 
